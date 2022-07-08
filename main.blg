@@ -1,0 +1,15 @@
+[1] Config.pm:307> INFO - This is Biber 2.17
+[1] Config.pm:310> INFO - Logfile is 'main.blg'
+[105] biber:340> INFO - === Fri Jul  8, 2022, 14:32:59
+[119] Biber.pm:418> INFO - Reading 'main.bcf'
+[175] Biber.pm:972> INFO - Found 14 citekeys in bib section 0
+[187] Biber.pm:4383> INFO - Processing section 0
+[196] Biber.pm:4574> INFO - Looking for bibtex file './src/ta.bib' for section 0
+[200] bibtex.pm:1713> INFO - LaTeX decoding ...
+[231] bibtex.pm:1518> INFO - Found BibTeX data source './src/ta.bib'
+[345] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[345] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[345] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'indonesian'
+[345] Biber.pm:4209> INFO - No sort tailoring available for locale 'indonesian'
+[352] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[362] bbl.pm:757> INFO - Output to main.bbl

@@ -1,0 +1,118 @@
+\chapter{PENDAHULUAN}
+
+\section{Latar Belakang Masalah}
+Salah satu faktor penentu kesuksesan dalam operasi \textit{Search and Rescue} (SAR) pada bencana alam adalah kecepatan dalam menemukan lokasi dan posisi korban serta pengiriman logistik bantuan penunjang hidup bagi korban tersebut. Namun, kondisi daratan medan bencana alam yang sukar dilewati oleh tim penyelamat dapat menyebabkan lamanya kedua proses tersebut, menurunkan probabilitas keselamatan bagi korban \cite{syafitriAutonomousDisasterVictim2020}. Pada saat ini, metode yang biasa digunakan untuk pencarian korban adalah menggunakan helikopter dengan pencarian manual dari udara. Akan tetapi, penggunaan helikopter memiliki kelemahan pada sisi biaya operasi serta perubahan cuaca, dimana penerbangan helikopter yang aman hanya dapat dilakukan pada kondisi cuaca cerah tidak berkabut \cite{shimanskiRisksMountainRescue2008}. Oleh karena itu, penggunaan \textit{Unmanned Aerial Vehicles} (UAV) untuk kepentingan SAR dapat meningkat sebagai pendukung terhadap penggunaan helikopter pada operasi SAR.
+
+Menurut (Lakshmi Narayanan, 2015), UAV adalah sebuah tipe pesawat terbang yang dapat mengudara tanpa adanya awak di atas kapal \cite{lakshminarayananJointNetworkDisaster2015}. Terdapat berbagai kegunaan sebuah UAV, salah satunya adalah operasi SAR. UAV memiliki keunggulan yang cocok bagi operasi SAR, yakni kemampuannya untuk melihat suatu area yang luas dengan akses yang cepat tanpa terhalang oleh medan bencana \cite{DronesSearchRescue}. UAV juga unggul dalam menghadapi cuaca buruk, dimana cuaca berkabut dapat menyebabkan helikopter tidak dapat terbang karena alasan keamanan, sedangkan UAV tetap dapat terbang karena tidak ada personil yang dibahayakan pada kondisi tersebut. Pada lokasi bencana alam, akses medan bencana yang sulit dapat mempersulit operasi SAR, terutama pada pencarian korban dan pengiriman bantuan. 
+
+Oleh karena itu, penelitian ini mengusulkan suatu pengembangan pada sistem komunikasi antar-UAV yang kemudian dapat digunakan pada operasi SAR, dimana data yang dikirimkan berupa koordinat lokasi salah satu unit UAV dalam jaringan. Untuk mewujudkan koordinasi antar masing-masing unit UAV, maka diperlukan sistem komunikasi antar-UAV yang memenuhi kriteria kinerja minimum: \textit{throughput} (laju pengiriman data) minimum 16 KBps, \textit{packet loss} (persentase paket data yang hilang dalam transmisi) dibawah 25\%, jarak minimum antar unit UAV minimum 25 meter, dan \textit{round-trip delay} (waktu tempuh pengiriman data bolak-balik) dibawah 4000 milisekon.
+
+Terdapat beberapa arsitektur komunikasi yang layak untuk penggunaan pada komunikasi antar-UAV, seperti \textit{Flying Ad-Hoc Network} (FANET) \cite{khanFlyingAdhocNetworks2017} dan \textit{Centralized} berbasis teknologi seluler (LTE, 5G) \cite{linSkyNotLimit2018}. Namun, ketergantungan teknologi seluler terhadap infrastruktur yang telah ada di darat membuat komunikasi berbasis seluler kurang sesuai jika digunakan untuk kondisi bencana, karena rusaknya infrastruktur fisik (menara \textit{Base Transceiver Station} (BTS)), disrupsi pada infrastruktur penunjang (listrik), dan juga \textit{overload} oleh melonjaknya jumlah pengguna jaringan di waktu yang bersamaan  \cite{townsendTelecommunicationsInfrastructureDisasters2005}. Oleh karena itu, penulis akan menggunakan teknologi FANET berbasis IEEE 802.11 WiFi dengan menggunakan mikrokontroler ESP32 dalam sebuah jaringan WiFi Mesh.
+
+Mikrokontroler ESP32 digunakan karena harganya yang ekonomis dan telah memiliki kapabilitas WiFi IEEE 802.11 secara \textit{built-in}, dapat diprogram menggunakan bahasa pemrograman Arduino yang berbasiskan C dan C++, serta memiliki dokumentasi dan \textit{plug-in} yang lengkap. ESP32 juga mendukung beragam mode operasi WiFi IEEE 802.11 dari 802.11b/g/n dan mode khusus Espressif yakni 802.11 \textit{Long Range}. Setiap mikrokontroler ESP32 beroperasi pada pita frekuensi 2.4 GHz. Pada sistem yang dirancang, masing-masing unit UAV akan dipasangkan satu unit board ESP32 yang kemudian akan berkomunikasi satu sama lain pada mode WiFi ad-hoc.
+
+Dalam tugas akhir ini, dirancang sebuah algoritma komunikasi antar-UAV berbasis WiFi Mesh pada mikrokontroler ESP32, serta akan menganalisis sistem yang dihasilkan dengan parameter kinerja jaringan (\textit{throughput, packet loss, round-trip delay, signal strength }(RSSI) terhadap jarak antar unit UAV, dampak sistem penerbangan dan kendali UAV terhadap kinerja sistem, serta mode IEEE 802.11 yang digunakan ESP32 terhadap kinerja sistem. Diharapkan hasil sistem yang diperoleh dapat dijadikan salah satu metode komunikasi antar-UAV pada kegunaan operasi SAR dalam menemukan posisi korban.
+
+\section{Rumusan Masalah}
+Rumusan masalah dari penelitian ini adalah sebagai berikut:
+\begin{enumerate}
+	\item Bagaiamana korelasi antara jarak antar-UAV terhadap kinerja jaringan (\textit{throughput, packet loss, range, round-trip delay}) yang telah diimplementasikan?
+	\item Apakah sistem penerbangan dan kendali UAV mempengaruhi kinerja sistem komunikasi antar-UAV?
+	\item Apa mode WiFi 802.11 yang cocok digunakan untuk kegunaan sistem komunikasi antar-UAV?
+	\item Apakah algoritma komunikasi yang dihasilkan dapat diimplementasikan di lokasi medan bencana alam?
+\end{enumerate}
+
+\section{Tujuan dan Manfaat}
+Tujuan dari perancangan algoritma komunikasi antar-UAV ini adalah:
+\begin{enumerate}
+	\item Mengetahui korelasi jarak dan ketinggian terhadap kinerja jaringan yang diimplementasikan, dengan parameter kinerja \textit{throughput, packet oss, range, round-trip delay}.
+	\item Mengetahui dampak sistem penerbangan dan kendali UAV terhadap kinerja jaringan yang diimplementasikan.
+	\item Mengetahui korelasi mode WiFi 802.11 yang digunakan pada sistem terhadap kinerja jaringan yang diimplementasikan
+	\item Mengetahui apakah algoritma yang dihasilkan berguna untuk operasi SAR pada bencana alam.
+\end{enumerate}
+Adapun manfaat dari penelitian ini adalah:
+\begin{enumerate}
+	\item Mengembangkan sebuah algoritma komunikasi antar-UAV yang cukup handal dengan \textit{link quality} tinggi sehingga UAV dapat berkomunikasi satu sama lain untuk mengirimkan data.
+	\item Sebagai tahap pertama dari pengembangan sistem UAV SAR otonom.
+	\item Sebagai sumber pustaka bagi penelitian di masa depan mengenai permasalahan terkait.
+\end{enumerate}
+
+\section{Batasan Masalah}
+Agar pembahasan dalam penelitian dapat difokuskan, maka terdapat pembatasan masalah sebagai berikut:
+\begin{enumerate}
+	\item Menggunakan 2 unit drone dan satu \textit{Base Station} (BS) untuk menyederhanakan sistem rancangan.
+	\item Data komunikasi antar-UAV yang dikirimkan berupa data koordinat (Lintang dan Bujur) dengan 5 angka desimal untuk tingkat kepresisian 1 meter \cite{PrecisionCoordinatesOpenStreetMap}.
+	\item Setiap node ESP32 menggunakan kanal 1 WiFi 2.4 GHz dengan rentang frekuensi 2401-2423 MHz.
+	\item Kendali masing-masing drone dilakukan secara terpisah dari sistem komunikasi yang diuji dan dilakukan secara manual oleh operator menggunakan \textit{remote control} (R/C).
+	\item Parameter yang digunakan pada analisis algoritma jaringan yang diimplementasikan adalah \textit{throughput} jaringan, \textit{packet loss},  \textit{round-trip delay}, dan \textit{signal strength} dalam RSSI (dBm).
+	\item Pengujian dilakukan di area Gedung N Fakultas Teknik Elektro Telkom University, dengan jarak antar UAV 20 meter, 50 meter, dan 100 meter, dengan ketinggian setingkat lantai 1, 2, dan 3 pada Gedung N.
+	\item Pengujian dilakukan dengan kondisi drone OFF dan ON.
+\end{enumerate}
+
+\section{Metode Penelitian}
+Metode penelitian yang digunakan pada tugas akhir ini antara lain:
+\begin{enumerate}
+	\item Studi Literatur
+	
+	Studi literatur dilakukan dengan mempelajari beberapa materi yang berkaitan dengan penelitian ini, dengan sumber yang digunakan berupa jurnal, artikel, buku, dan situs web yang terpercaya.
+	\item Perancangan Sistem
+	
+	Pada tahap ini, dilakukan perancangan sistem sesuai dengan target yang telah ditentukan. Melalui perancangan sistem, dihasilkan suatu gambaran jelas mengenai struktur penyusunan sistem dan dapat dilakukan analisis secara matematis.
+	\item Implementasi
+	
+	Sistem yang telah dirancang kemudian diimplementasikan melalui perangkaian komponen-komponen yang telah ditentukan, serta melakukan pemrograman sistem tersebut.
+	\item Pengukuran Empiris
+	
+	Pada tahap ini, sistem yang telah diimplementasikan diuji melalui beberapa tes yang menguji sistemnya secara kuantitatif untuk menghasilkan data empiris yang dapat diolah dalam bentuk grafik.
+	\item Analisis Statistik
+	
+	Hasil pengukuran kemudian dianalisis berdasarkan teori yang telah dikemukakan, dan menghitung faktor-faktor lainnya seperti keakuratan alat pengukur dan faktor-faktor eksternal yang mempengaruhi kinerja sistem.
+\end{enumerate}
+
+\section{Jadwal Pelaksanaan}
+Berikut adalah jadwal pelaksanaan penelitian ini, rincian waktu dan \textit{milestone} dirangkum dalam tabel di bawah ini:
+
+\begin{center}
+	\captionof{table}{Jadwal pelaksanaan penelitian.}
+	\begin{tabular}{|p{1cm}|p{4cm}|p{2cm}|p{2cm}|p{4cm}|}
+		\hline
+		\textbf{No.} & \textbf{Deskripsi Tahapan} & \textbf{Durasi} & \textbf{Tanggal Selesai} & \textbf{\textit{Milestone}} \\
+		\hline
+		1 & Rumusan masalah dan studi literatur & 2 Minggu & 21 Oktober 2021 & Mengidentifikasi permasalahan dan studi literatur. \\
+		\hline
+		2 & Desain sistem & 2 Minggu & 29 Oktober 2021 & Diagram blok sistem, sketsa dasar sistem, diagram alur sistem, dan spesifikasi alat. \\
+		\hline
+		3 & Pemilihan komponen & 1 Minggu & 5 November 2021 & Pendataan komponen sistem yang akan digunakan. \\
+		\hline
+		4 & Perancangan dan pembuatan sistem & 1 Bulan & 3 Desember 2021 & Implementasi sistem secara fisik. \\
+		\hline
+		5 & Pengujian sistem & 2 Minggu & 8 Juli 2022 & \textit{Test flight} dan pengujian jaringan sistem. \\
+		\hline
+		6 & Penyusunan Laporan/Buku TA & 2 Minggu & 22 Juli 2022 & Laporan/Buku TA selesai. \\
+		\hline
+	\end{tabular}
+\end{center}
+
+\section{Sistematika Penulisan}
+Sistematika penulisan yang digunakan pada tugas akhir ini adalah:
+\begin{itemize}
+	\item[] \textbf{BAB I: PENDAHULUAN}
+	
+	Bab ini berisi uraian singkat mengenai latar belakang permasalahan, rumusan masalah, tujuan dan manfaat, pembatasan masalah, serta jadwal pelaksanaan penelitian.
+	
+	\item[] \textbf{BAB II: TINJAUAN PUSTAKA DAN KONSEP DASAR SISTEM}
+	
+	Bab ini berisi uraian mengenai landasan teori serta membahas konsep dasar sistem yang dibahas dalam tugas akhir ini.
+	
+	\item[] \textbf{BAB III: PERANCANGAN SISTEM}
+	
+	Bab ini berisi uraian mengenai rancangan sistem dari sisi desain perangkat keras maupun perangkat lunak, fungsi dan fitur, serta spesifikasi sistem.
+	
+	\item[] \textbf{BAB IV: HASIL DAN ANALISIS}
+	
+	Bab ini berisi uraian mengenai hasil pengujian sistem, serta analisis dari hasil pengujian tersebut secara rinci terhadap parameter yang sudah ditentukan.
+	
+	\item[] \textbf{BAB V: SIMPULAN DAN SARAN}
+	
+	Bab ini berisi rincian kesimpulan dari penelitian yang telah dikerjakan, serta saran untuk penelitian berikutnya.
+\end{itemize}	

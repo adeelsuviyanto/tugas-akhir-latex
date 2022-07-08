@@ -1,0 +1,72 @@
+%
+% Tugas Akhir S1 Teknik Elektro
+%
+% Muhammad Adeel Mahdi Suviyanto (1102183191)
+% S1 Teknik Elektro
+% Fakultas Teknik Elektro
+% Telkom University
+%
+% Dokumen ini dibuat sesuai dengan kaidah format penulisan Tugas Akhir di Telkom University,
+% dengan standar sitasi IEEE.
+
+
+% Klasifikasi dokumen sebagai report, single column
+\documentclass[12pt, a4paper, oneside]{book}
+
+% Load file konfigurasi
+\input{./src/config}
+
+% Load file BibLaTeX
+\addbibresource{./src/references.bib,./src/ta.bib }
+
+% Start dari dokumen
+\begin{document}
+	
+% Cover
+\include{./src/cover}	
+
+% Menyalakan penomoran halaman, angka romawi
+\frontmatter
+\pagestyle{myheadings}
+\setcounter{page}{1}
+	
+% Halaman pengesahan
+\include{./src/pengesahan}
+
+% Halaman pernyataan orisinalitas
+\include{./src/orisinalitas}
+% Abstrak
+\include{./src/abstrak}
+% Abstract
+\include{./src/abstract}
+% Kata Pengantar
+\include{./src/katapengantar}
+% Ucapan Terima Kasih
+\include{./src/ucapanterimakasih}
+
+%Menggunakan angka romawi dalam penomoran bab
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+% Daftar isi
+\include{./src/daftarisi}
+% Daftar gambar
+\include{./src/daftargambar}
+% Daftar tabel
+\include{./src/daftartabel}
+% Daftar singkatan
+\include{./src/daftarsingkatan}
+
+% Mulai bagian utama tugas akhir
+\mainmatter
+% Bab 1
+\include{./src/bab1}
+% Bab 2
+\include{./src/bab2}
+% Daftar Pustaka
+\selectlanguage{english}
+\printbibliography[title={DAFTAR PUSTAKA}]
+
+	
+\end{document}

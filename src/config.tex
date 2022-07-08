@@ -1,0 +1,103 @@
+%
+% Konfigurasi LaTeX Tugas Akhir
+%
+% Muhammad Adeel Mahdi Suviyanto (1102183191)
+% S1 Teknik Elektro
+% Fakultas Teknik Elektro
+% Telkom University
+%
+%
+%
+
+%Data buku
+%Judul laporan
+\newcommand{\judul}{Pengembangan Algoritma Komunikasi Antar-Unmanned Aerial Vehicle Berbasis \textit{PainlessMesh} Pada Mikrokontroler ESP32}
+%Judul laporan, kapital
+\newcommand{\JUDUL}{PENGEMBANGAN ALGORITMA KOMUNIKASI ANTAR-UNMANNED AERIAL VEHICLE BERBASIS \textit{PAINLESSMESH} PADA MIKROKONTROLER ESP32}
+
+%Thesis title
+\newcommand{\juduleng}{Development of an Inter-Unmanned Aerial Vehicle Communications Algorithm based on PainlessMesh using an ESP32 Microcontroller}
+%Thesis title, in caps
+\newcommand{\JUDULENG}{DEVELOPMENT OF AN INTER-UNMANNED AERIAL VEHICLE COMMUNICATIONS ALGORITHM BASED ON PAINLESSMESH USING AN ESP32 MICROCONTROLLER}
+
+%Tahun publikasi
+\newcommand{\tahun}{2022}
+%Tanggal pengesahan
+\newcommand{\tanggalpengesahan}{x Juli 2022}
+
+%Data penulis
+%Nama penulis
+\newcommand{\penulis}{Muhammad Adeel Mahdi Suviyanto}
+%Nama penulis, kapital
+\newcommand{\PENULIS}{MUHAMMAD ADEEL MAHDI SUVIYANTO}
+%NIM
+\newcommand{\nim}{1102183191}
+%Email penulis
+\newcommand{\email}{adeelsuviyanto@gmail.com}
+%Program Studi
+\newcommand{\prodi}{S1 Teknik Elektro}
+%Gelar yang akan diperoleh
+\newcommand{\gelar}{Sarjana Teknik}
+%Program kuliah
+\newcommand{\program}{Teknik Elektro Universitas Telkom}
+%Fakultas
+\newcommand{\fakultas}{Fakultas Teknik Elektro}
+%Fakultas, kapital
+\newcommand{\FAKULTAS}{FAKULTAS TEKNIK ELEKTRO}
+%Universitas
+\newcommand{\universitas}{Telkom University}
+
+%Data Pembimbing
+%Pembimbing 1
+\newcommand{\pembimbingsatu}{Dr. Eng. Willy Anugrah Cahyadi, S.T, M.T}
+\newcommand{\pembimbingdua}{Ir. Uke Kurniawan Usman, M.T}
+
+%
+% Document packages!
+%
+% Atur sesuai kebutuhan, masih berbasis pada format Proposal Tugas Akhir
+%
+\usepackage[indonesian]{babel}
+\usepackage{amsmath} %Penulisan notasi matematika
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx} %Memasukkan gambar ke laporan
+\usepackage{fontenc}
+\usepackage{pslatex} %Times New Roman
+\usepackage{hyperref}
+\usepackage[a4paper, lmargin=4cm, rmargin=3cm, tmargin=3cm, bmargin=3cm]{geometry}
+\usepackage[backend=biber, style=ieee, autolang=other]{biblatex}
+\usepackage{csquotes}
+\usepackage{fancyhdr} %Header and footer
+\usepackage{longtable}
+\usepackage{caption} %Caption gambar
+\usepackage{setspace}
+	\onehalfspacing %Set line spacing ke 1.5
+\usepackage[ConnyRevised]{fncychap}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+
+%
+% Chapter style setup
+%
+\titleformat{\chapter}[display]{\bfseries\large\centering}{BAB \thechapter}{1pt}{}[]
+\titlespacing*{\chapter}{0pt}{-50pt}{1.5pt}
+%setup section style
+\titleformat{\section}[hang]{\bfseries\normalsize}{\thesection \ }{1pt}{}[]
+\titlespacing*{\section}{0pt}{0pt}{1.5pt}
+\titleformat{\subsection}[hang]{\bfseries\normalsize}{\thesubsection \ }{1pt}{}[]
+
+%set biblatex file
+\addbibresource{./src/ta.bib}
+
+%disable numbering for front matter
+\newenvironment{unnumbered}
+{\global\chardef\keeplevel=\value{secnumdepth}%
+	\setcounter{secnumdepth}{-1}}
+{\setcounter{secnumdepth}{\keeplevel}}
+
+%dotted line for TOC
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}} % for parts
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % for chapters
