@@ -23,6 +23,14 @@
 \contentsline {section}{\numberline {2.4}\textit {Quadcopter}}{10}{section.2.4}%
 \contentsline {section}{\numberline {2.5}ESP32}{11}{section.2.5}%
 \contentsline {section}{\numberline {2.6}PainlessMesh}{11}{section.2.6}%
+\contentsline {section}{\numberline {2.7}JavaScript Object Notation (JSON)}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.8}GPS NMEA Data}{12}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Pengukuran Kinerja Jaringan}{13}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Round-trip delay}{13}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Throughput}{13}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}Packet loss}{14}{subsection.2.9.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 

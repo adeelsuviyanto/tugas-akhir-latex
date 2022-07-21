@@ -79,3 +79,54 @@ Jaringan PainlessMesh menggunakan mode APSTA pada board ESP32, dimana setiap boa
 \end{figure}
 
 Keistimewaan dari library PainlessMesh adalah kemampuannya untuk \textit{autoconfigure}, dimana setiap node dapat memutus sambungan dan menyambung ulang setiap saat, dan jaringan mesh dapat berjalan melalui proses konfigurasi secara otomatis.
+
+\section{JavaScript Object Notation (JSON)}
+PainlessMesh menggunakan JavaScript Object Notation untuk setiap pengiriman pesan antar-node dalam jaringan. Penggunaan JSON memudahkan penafsiran \textit{(parsing)} setiap pesan yang diterima untuk kemudian diolah menjadi data yang ditampilkan \cite{MeshProtocolWiki}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{./assets/PainlessMeshJSON}
+	\caption{Setiap pesan pada jaringan PainlessMesh menggunakan JSON.}
+\end{figure}
+
+Setiap paket data PainlessMesh menggunakan skema JSON untuk menentukan tujuan (dari \textit{key "dest"}), dari mana paket data tersebut berasal (\textit{key "from"}), jenis paket berdasarkan nilai integer pada \textit{key "type"}, serta pesan yang akan dikirim pada \textit{key "msg"}. \newline
+
+\section{GPS NMEA Data}
+Modul GPS NEO-6M menghasilkan output serial mentah berupa data NMEA 0183, sebuah standar komunikasi piranti GPS berupa karakter-karakter ASCII yang membentuk kalimat-kalimat NMEA \cite{GPSNMEASentence}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{./assets/NMEASentences}
+	\caption{Contoh data mentah dari modul GPS NEO-6M berupa data GPS NMEA.}
+\end{figure}
+
+\section{Pengukuran Kinerja Jaringan}
+\subsection{Round-trip delay}
+\textit{Round-trip delay} adalah waktu yang diperlukan untuk sebuah paket data dikirimkan dari node pengirim ke node penerima, ditambah waktu yang diperlukan untuk paket \textit{acknowledge} diterima oleh node pengirim dari node penerima. Pengukuran \textit{round-trip delay} dapat menggunakan fungsi yang sudah diimplementasikan dalam \textit{library} PainlessMesh yakni \verb|painlessMesh::startDelayMeas()|.
+
+Setiap node pada jaringan PainlessMesh memiliki waktu internal yang tersinkronisasi satu sama lain melalui proses \textit{"Time sync"} \cite{MeshProtocolWiki} yang berlangsung secara periodis setiap 10 menit. PainlessMesh menjaga waktu jaringan pada tingkat kepresisian mikrosekon menggunakan fungsi \verb|micros()| pada mikrokontroler ESP32. Kemudian setelah fungsi \verb|startDelayMeas()| dipanggil, maka \textit{round-trip delay} dapat dihitung menggunakan rumus berikut:
+
+\[ t_{round trip} = (t_3 - t_0) - (t_2 - t_1) \]
+$t_0$ = waktu internal pada pengirim \textit{delay measurement}\\
+$t_1$ = \textit{timestamp} pada saat paket \textit{delay measurement} diterima\\
+$t_2$ = \textit{timestamp} pada saat respon terhadap \textit{delay measurement} dikirimkan\\
+$t_3$ = \textit{timestamp} pada saat respon diterima oleh pengirim \textit{delay measurement}
+
+\subsection{Throughput}
+\textit{Throughput} adalah banyaknya data yang dapat ditransmisikan dalam suatu satuan waktu. Pada penelitian ini, \textit{throughput} dihitung setiap pengiriman paket data, dibandingkan dengan perbedaan \textit{timestamp} antara pengiriman dan penerimaan paket data tersebut.
+
+\[Throughput = \frac{sizeof(packet)}{t_1 - t_0}\]
+$t_0$ = waktu internal pada saat pengirim mengirim paket data\\
+$t_1$ = \textit{timestamp} pada saat penerima menerima paket data
+
+\subsection{Packet loss}
+Packet loss adalah jumlah packet data yang hilang dibandingkan packet data yang berhasil dikirimkan.
+\[ Packet Loss = (1 - \frac{p_{TX}}{ack_{RX}})\times 100\%\]
+$p_{TX}$ = jumlah packet data yang dikirimkan\\
+$ack_{RX}$ = jumlah packet \textit{acknowledge} yang diterima
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{./assets/PingTest}
+	\caption{Skema pengujian \textit{round-trip delay} dan \textit{packet loss}}
+\end{figure}

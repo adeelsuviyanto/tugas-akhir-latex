@@ -2346,7 +2346,7 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex" glob="false">./src/ta.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex" glob="false">./src/references.bib,./src/ta.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">./src/references.bib,./src/ta.bib,./assets/zoteroexport.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="2">syafitriAutonomousDisasterVictim2020</bcf:citekey>
@@ -2366,20 +2366,25 @@
     <bcf:citekey order="16">WiFiDriverESP32</bcf:citekey>
     <bcf:citekey order="17">HomeWikiPainlessMesh</bcf:citekey>
     <bcf:citekey order="18">HomeWikiPainlessMesh</bcf:citekey>
-    <bcf:citekey order="19">syafitriAutonomousDisasterVictim2020</bcf:citekey>
-    <bcf:citekey order="20">shimanskiRisksMountainRescue2008</bcf:citekey>
-    <bcf:citekey order="21">lakshminarayananJointNetworkDisaster2015</bcf:citekey>
-    <bcf:citekey order="22">DronesSearchRescue</bcf:citekey>
-    <bcf:citekey order="23">khanFlyingAdhocNetworks2017</bcf:citekey>
-    <bcf:citekey order="24">linSkyNotLimit2018</bcf:citekey>
-    <bcf:citekey order="25">townsendTelecommunicationsInfrastructureDisasters2005</bcf:citekey>
-    <bcf:citekey order="26">PrecisionCoordinatesOpenStreetMap</bcf:citekey>
-    <bcf:citekey order="27">santosUseHighMobility2021</bcf:citekey>
-    <bcf:citekey order="28">chiaPerformanceEvaluationESP82662019a</bcf:citekey>
-    <bcf:citekey order="29">manviImplementingWirelessMesh2020</bcf:citekey>
-    <bcf:citekey order="30">guoDustSensorMonitoring2021</bcf:citekey>
-    <bcf:citekey order="31">WiFiDriverESP32</bcf:citekey>
-    <bcf:citekey order="32">HomeWikiPainlessMesh</bcf:citekey>
+    <bcf:citekey order="19">MeshProtocolWiki</bcf:citekey>
+    <bcf:citekey order="20">GPSNMEASentence</bcf:citekey>
+    <bcf:citekey order="21">MeshProtocolWiki</bcf:citekey>
+    <bcf:citekey order="22">syafitriAutonomousDisasterVictim2020</bcf:citekey>
+    <bcf:citekey order="23">shimanskiRisksMountainRescue2008</bcf:citekey>
+    <bcf:citekey order="24">lakshminarayananJointNetworkDisaster2015</bcf:citekey>
+    <bcf:citekey order="25">DronesSearchRescue</bcf:citekey>
+    <bcf:citekey order="26">khanFlyingAdhocNetworks2017</bcf:citekey>
+    <bcf:citekey order="27">linSkyNotLimit2018</bcf:citekey>
+    <bcf:citekey order="28">townsendTelecommunicationsInfrastructureDisasters2005</bcf:citekey>
+    <bcf:citekey order="29">PrecisionCoordinatesOpenStreetMap</bcf:citekey>
+    <bcf:citekey order="30">santosUseHighMobility2021</bcf:citekey>
+    <bcf:citekey order="31">chiaPerformanceEvaluationESP82662019a</bcf:citekey>
+    <bcf:citekey order="32">manviImplementingWirelessMesh2020</bcf:citekey>
+    <bcf:citekey order="33">guoDustSensorMonitoring2021</bcf:citekey>
+    <bcf:citekey order="34">WiFiDriverESP32</bcf:citekey>
+    <bcf:citekey order="35">HomeWikiPainlessMesh</bcf:citekey>
+    <bcf:citekey order="36">MeshProtocolWiki</bcf:citekey>
+    <bcf:citekey order="37">GPSNMEASentence</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

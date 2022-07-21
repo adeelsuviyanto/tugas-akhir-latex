@@ -554,6 +554,29 @@
       \verb /home/adeel/Zotero/storage/RJ4FGW34/home.html
       \endverb
     \endentry
+    \entry{MeshProtocolWiki}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A painless way to setup a mesh with ESP8266 and ESP32 devices. Based on https://github.com/Coopdis/easyMesh}
+      \field{howpublished}{https://gitlab.com/painlessMesh/painlessMesh/-/wikis/mesh-protocol}
+      \field{journaltitle}{GitLab}
+      \field{langid}{english}
+      \field{title}{Mesh Protocol {$\cdot$} {{Wiki}} {$\cdot$} {{painlessMesh}} / {{painlessMesh}}}
+      \verb{file}
+      \verb /home/adeel/Zotero/storage/GAQK773U/mesh-protocol.html
+      \endverb
+    \endentry
+    \entry{GPSNMEASentence}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{http://aprs.gids.nl/nmea/}
+      \field{title}{{{GPS}} - {{NMEA}} Sentence Information}
+      \verb{file}
+      \verb /home/adeel/Zotero/storage/9BCJ4QHU/nmea.html
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

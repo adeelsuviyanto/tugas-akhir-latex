@@ -83,7 +83,7 @@
     </requires>
     <requires type="editable">
       <file>./src/ta.bib</file>
-      <file>./src/references.bib,./src/ta.bib </file>
+      <file>./src/references.bib,./src/ta.bib,./assets/zoteroexport.bib </file>
     </requires>
   </external>
 </requests>
