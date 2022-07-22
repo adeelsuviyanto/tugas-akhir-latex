@@ -66,7 +66,7 @@
 \usepackage{pslatex} %Times New Roman
 \usepackage{hyperref}
 \usepackage[a4paper, lmargin=4cm, rmargin=3cm, tmargin=3cm, bmargin=3cm]{geometry}
-\usepackage[backend=biber, style=ieee, autolang=other]{biblatex}
+\usepackage[backend=biber, style=ieee, language=english]{biblatex}
 \usepackage{csquotes}
 \usepackage{fancyhdr} %Header and footer
 \usepackage{longtable}
@@ -88,6 +88,7 @@
 \titleformat{\section}[hang]{\bfseries\normalsize}{\thesection \ }{1pt}{}[]
 \titlespacing*{\section}{0pt}{0pt}{1.5pt}
 \titleformat{\subsection}[hang]{\bfseries\normalsize}{\thesubsection \ }{1pt}{}[]
+\titleformat{\subsubsection}[hang]{\bfseries\normalsize}{\thesubsubsection \ }{1pt}{}[]
 
 %set biblatex file
 \addbibresource{./src/ta.bib}

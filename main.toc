@@ -5,9 +5,9 @@
 \contentsline {chapter}{KATA PENGANTAR}{v}{Doc-Start}%
 \contentsline {chapter}{UCAPAN TERIMA KASIH}{vi}{Doc-Start}%
 \contentsline {chapter}{DAFTAR ISI}{vii}{Doc-Start}%
-\contentsline {chapter}{DAFTAR GAMBAR}{viii}{Doc-Start}%
-\contentsline {chapter}{DAFTAR TABEL}{ix}{Doc-Start}%
-\contentsline {chapter}{DAFTAR SINGKATAN}{x}{Doc-Start}%
+\contentsline {chapter}{DAFTAR GAMBAR}{ix}{Doc-Start}%
+\contentsline {chapter}{DAFTAR TABEL}{x}{Doc-Start}%
+\contentsline {chapter}{DAFTAR SINGKATAN}{xi}{Doc-Start}%
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang Masalah}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}%
@@ -29,16 +29,14 @@
 \contentsline {subsection}{\numberline {2.9.1}Round-trip delay}{13}{subsection.2.9.1}%
 \contentsline {subsection}{\numberline {2.9.2}Throughput}{13}{subsection.2.9.2}%
 \contentsline {subsection}{\numberline {2.9.3}Packet loss}{14}{subsection.2.9.3}%
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {III}PERANCANGAN SISTEM}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Desain Sistem}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Diagram Blok}{15}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}Sender Node}{15}{subsubsection.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}Flying Receiver Node}{16}{subsubsection.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.1.3}Base Station Receiver Node}{16}{subsubsection.3.1.1.3}%
+\contentsline {subsection}{\numberline {3.1.2}Fungsi dan Fitur}{16}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Desain Perangkat Keras}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Desain Perangkat Lunak}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Sender Node}{21}{subsection.3.3.1}%
 \babel@toc {english}{}\relax 

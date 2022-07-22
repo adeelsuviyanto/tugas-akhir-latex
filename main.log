@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.9)  20 JUL 2022 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.21)  22 JUL 2022 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,7 +765,7 @@ Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (./src/abstrak.aux) (./src/abstract.aux) (./src/katapengantar.aux)
 (./src/ucapanterimakasih.aux) (./src/daftarisi.aux) (./src/daftargambar.aux)
 (./src/daftartabel.aux) (./src/daftarsingkatan.aux) (./src/bab1.aux)
-(./src/bab2.aux)
+(./src/bab2.aux) (./src/bab3.aux)
 (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing basic data for english
 (babel)             from babel-en.ini. Reported on input line 11.
@@ -903,7 +903,7 @@ Package caption Info: End \AtBeginDocument code.
 
 
 (./src/cover.tex
-<./assets/logotelu.png, id=116, 398.142pt x 483.2235pt>
+<./assets/logotelu.png, id=144, 398.142pt x 483.2235pt>
 File: ./assets/logotelu.png Graphic file (type png)
 <use ./assets/logotelu.png>
 Package pdftex.def Info: ./assets/logotelu.png  used on input line 23.
@@ -1006,24 +1006,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--21
 ]
 \openout2 = `./src/daftarisi.aux'.
 
- (./src/daftarisi.tex (./main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-)
+ (./src/daftarisi.tex (./main.toc
 [7
 
 
 
 
-]
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+) [8]
 \openout2 = `./src/daftargambar.aux'.
 
  (./src/daftargambar.tex (./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-) [8
+) [9
 
 
 
@@ -1036,7 +1036,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--21
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
-) [9
+) [10
 
 
 
@@ -1044,7 +1044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--21
 ]
 \openout2 = `./src/daftarsingkatan.aux'.
 
- (./src/daftarsingkatan.tex) [10
+ (./src/daftarsingkatan.tex) [11
 
 
 
@@ -1132,7 +1132,7 @@ Overfull \hbox (31.5472pt too wide) in paragraph at lines 77--94
 
  (./src/bab2.tex
 Bab II.
-<./assets/IOProses.png, id=284, 683.55376pt x 261.97874pt>
+<./assets/IOProses.png, id=342, 683.55376pt x 261.97874pt>
 File: ./assets/IOProses.png Graphic file (type png)
 <use ./assets/IOProses.png>
 Package pdftex.def Info: ./assets/IOProses.png  used on input line 15.
@@ -1148,7 +1148,7 @@ Overfull \hbox (11.79683pt too wide) in paragraph at lines 15--16
 
 
  <./assets/IOProses.png>]
-<./assets/Diagram Sistem.png, id=298, 631.35875pt x 339.2675pt>
+<./assets/Diagram Sistem.png, id=356, 631.35875pt x 339.2675pt>
 File: ./assets/Diagram Sistem.png Graphic file (type png)
 <use ./assets/Diagram Sistem.png>
 Package pdftex.def Info: ./assets/Diagram Sistem.png  used on input line 21.
@@ -1790,12 +1790,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
  []
 
 [9] [10]
-<./assets/ESP32.jpg, id=325, 1003.75pt x 1003.75pt>
+<./assets/ESP32.jpg, id=382, 1003.75pt x 1003.75pt>
 File: ./assets/ESP32.jpg Graphic file (type jpg)
 <use ./assets/ESP32.jpg>
 Package pdftex.def Info: ./assets/ESP32.jpg  used on input line 66.
 (pdftex.def)             Requested size: 100.38087pt x 100.38087pt.
-<./assets/painlessmesh.png, id=326, 497.86pt x 330.23375pt>
+<./assets/painlessmesh.png, id=383, 497.86pt x 330.23375pt>
 File: ./assets/painlessmesh.png Graphic file (type png)
 <use ./assets/painlessmesh.png>
 Package pdftex.def Info: ./assets/painlessmesh.png  used on input line 77.
@@ -1805,7 +1805,7 @@ Package pdftex.def Info: ./assets/painlessmesh.png  used on input line 77.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./assets/ESP32.jpg>]
-<./assets/PainlessMeshJSON.png, id=335, 322.20375pt x 148.555pt>
+<./assets/PainlessMeshJSON.png, id=392, 322.20375pt x 148.555pt>
 File: ./assets/PainlessMeshJSON.png Graphic file (type png)
 <use ./assets/PainlessMeshJSON.png>
 Package pdftex.def Info: ./assets/PainlessMeshJSON.png  used on input line 88.
@@ -1815,70 +1815,201 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-<./assets/NMEASentences.png, id=337, 523.9575pt x 157.33781pt>
+<./assets/NMEASentences.png, id=394, 523.9575pt x 157.33781pt>
 File: ./assets/NMEASentences.png Graphic file (type png)
 <use ./assets/NMEASentences.png>
 Package pdftex.def Info: ./assets/NMEASentences.png  used on input line 99.
 (pdftex.def)             Requested size: 261.9781pt x 78.6687pt.
 [12 <./assets/painlessMesh.png (PNG copy)> <./assets/PainlessMeshJSON.png>]
 [13 <./assets/NMEASentences.png (PNG copy)>]
-<./assets/PingTest.png, id=352, 402.50375pt x 332.24126pt>
+<./assets/PingTest.png, id=410, 402.50375pt x 332.24126pt>
 File: ./assets/PingTest.png Graphic file (type png)
 <use ./assets/PingTest.png>
 Package pdftex.def Info: ./assets/PingTest.png  used on input line 130.
 (pdftex.def)             Requested size: 281.7507pt x 232.56728pt.
 ) [14 <./assets/PingTest.png>]
-Overfull \hbox (4.91504pt too wide) in paragraph at lines 69--69
+\openout2 = `./src/bab3.aux'.
+
+
+(./src/bab3.tex
+Bab III.
+<./assets/DiagramBlokTANew.png, id=416, 758.835pt x 312.16624pt>
+File: ./assets/DiagramBlokTANew.png Graphic file (type png)
+<use ./assets/DiagramBlokTANew.png>
+Package pdftex.def Info: ./assets/DiagramBlokTANew.png  used on input line 9.
+(pdftex.def)             Requested size: 379.41658pt x 156.08273pt.
+[15
+
+
+
+
+ <./assets/DiagramBlokTANew.png>]
+<./assets/DiagramHWNew.png, id=423, 1186.4325pt x 613.29124pt>
+File: ./assets/DiagramHWNew.png Graphic file (type png)
+<use ./assets/DiagramHWNew.png>
+Package pdftex.def Info: ./assets/DiagramHWNew.png  used on input line 33.
+(pdftex.def)             Requested size: 415.2576pt x 214.65514pt.
+
+Overfull \hbox (16.919pt too wide) in paragraph at lines 33--34
+ [][] 
+ []
+
+[16]
+File: ./assets/ESP32.jpg Graphic file (type jpg)
+<use ./assets/ESP32.jpg>
+Package pdftex.def Info: ./assets/ESP32.jpg  used on input line 41.
+(pdftex.def)             Requested size: 200.74644pt x 200.74644pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 44.
+See the caption package documentation for explanation.
+
+[17 <./assets/DiagramHWNew.png>]
+Overfull \hbox (3.7057pt too wide) in paragraph at lines 49--49
+[]|\OT1/ptm/m/n/12 Konektivitas| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]|\OT1/ptm/m/n/12 Masukan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]|\OT1/ptm/m/n/12 Tegangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\OT1/ptm/m/n/12 Temperatur
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+7.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<./assets/NEO6M.jpg, id=437, 401.5pt x 401.5pt>
+File: ./assets/NEO6M.jpg Graphic file (type jpg)
+<use ./assets/NEO6M.jpg>
+Package pdftex.def Info: ./assets/NEO6M.jpg  used on input line 63.
+(pdftex.def)             Requested size: 160.59715pt x 160.59715pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 66.
+See the caption package documentation for explanation.
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\OT1/ptm/m/it/12 (re-a-cqu-i-si-tion)\OT1/ptm/m/n/12 , -147dBm \OT1/ptm/m/it/12
+ (co-ld start)\OT1/ptm/m/n/12 , -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\OT1/ptm/m/n/12 Akurasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\OT1/ptm/m/n/12 po-si-si
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\OT1/ptm/m/n/12 Masukan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]|\OT1/ptm/m/n/12 Maksimum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]|\OT1/ptm/m/n/12 Temperatur
+ []
+
+<./assets/MJX.jpg, id=444, 803.0pt x 803.0pt>
+File: ./assets/MJX.jpg Graphic file (type jpg)
+<use ./assets/MJX.jpg>
+Package pdftex.def Info: ./assets/MJX.jpg  used on input line 87.
+(pdftex.def)             Requested size: 160.59715pt x 160.59715pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 90.
+See the caption package documentation for explanation.
+
+[19 <./assets/NEO6M.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\OT1/ptm/m/n/12 Jarak Re-mo-te
+ []
+
+<./assets/FlowchartSenderNew.png, id=453, 1147.28625pt x 655.44875pt>
+File: ./assets/FlowchartSenderNew.png Graphic file (type png)
+<use ./assets/FlowchartSenderNew.png>
+Package pdftex.def Info: ./assets/FlowchartSenderNew.png  used on input line 11
+0.
+(pdftex.def)             Requested size: 401.5562pt x 229.41049pt.
+
+Overfull \hbox (3.2176pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
+
+[20 <./assets/MJX.jpg>]) [21 <./assets/FlowchartSenderNew.png>]
+Overfull \hbox (4.91504pt too wide) in paragraph at lines 75--75
 []\OT1/ptm/m/n/12 C. Shi-man-ski, \OT1/ptm/m/it/12 Risks in Moun-tain Res-cue\O
 T1/ptm/m/n/12 . Moun-tain Res-cue As-so-ci-a-tion, 2008. 
  []
 
 
-Overfull \hbox (95.95395pt too wide) in paragraph at lines 69--69
+Overfull \hbox (95.95395pt too wide) in paragraph at lines 75--75
 []\OT1/ptm/m/it/12 Drones for Search and Res-cue | Learn How and Why They are U
 sed\OT1/ptm/m/n/12 , https://flytnow.com/drones-
  []
 
 
-Overfull \hbox (158.13545pt too wide) in paragraph at lines 69--69
+Overfull \hbox (158.13545pt too wide) in paragraph at lines 75--75
 []\OT1/ptm/m/it/12 Precision of co-or-di-nates - Open-StreetMap Wiki\OT1/ptm/m/
 n/12 , https://wiki.openstreetmap.org/wiki/Precision[]of[]coordinates. 
  []
 
-[15
+[22
 
 
 
 ]
-Overfull \hbox (37.34337pt too wide) in paragraph at lines 69--69
+Overfull \hbox (37.34337pt too wide) in paragraph at lines 75--75
 \OT1/ptm/m/it/12 tion\OT1/ptm/m/n/12 , https://docs.espressif.com/projects/esp-
 idf/en/latest/esp32/api-guides/wifi.html. 
  []
 
 
-Overfull \hbox (71.51953pt too wide) in paragraph at lines 69--69
+Overfull \hbox (71.51953pt too wide) in paragraph at lines 75--75
 []\OT1/ptm/m/it/12 Home $\OMS/pzccm/m/n/12 ^^A$ \OT1/ptm/m/it/12 Wiki $\OMS/pzc
 cm/m/n/12 ^^A$ \OT1/ptm/m/it/12 painlessMesh / painlessMesh\OT1/ptm/m/n/12 , ht
 tps://gitlab.com/painlessMesh/painlessMesh/-
  []
 
 
-Overfull \hbox (111.26309pt too wide) in paragraph at lines 69--69
+Overfull \hbox (111.26309pt too wide) in paragraph at lines 75--75
 []\OT1/ptm/m/it/12 Mesh pro-to-col $\OMS/pzccm/m/n/12 ^^A$ \OT1/ptm/m/it/12 Wik
 i $\OMS/pzccm/m/n/12 ^^A$ \OT1/ptm/m/it/12 painlessMesh / painlessMesh\OT1/ptm/
 m/n/12 , https://gitlab.com/painlessMesh/painlessMesh/-
  []
 
-[16] (./main.aux (./src/cover.aux) (./src/pengesahan.aux)
+[23] (./main.aux (./src/cover.aux) (./src/pengesahan.aux)
 (./src/orisinalitas.aux) (./src/abstrak.aux) (./src/abstract.aux)
 (./src/katapengantar.aux) (./src/ucapanterimakasih.aux) (./src/daftarisi.aux)
 (./src/daftargambar.aux) (./src/daftartabel.aux) (./src/daftarsingkatan.aux)
-(./src/bab1.aux) (./src/bab2.aux))
+(./src/bab1.aux) (./src/bab2.aux) (./src/bab3.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A8F347E6CCAFED3E37B2C5E8BBDE271B;4090.
+(rerunfilecheck)             Checksum: 9F900E7B8D4DF117D0DBE328C3D51A26;5085.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -1887,23 +2018,23 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22946 strings out of 478238
- 404603 string characters out of 5850457
- 1156025 words of memory out of 5000000
- 40674 multiletter control sequences out of 15000+600000
- 502484 words of font info for 88 fonts, out of 8000000 for 9000
+ 23105 strings out of 478238
+ 407898 string characters out of 5850456
+ 1157656 words of memory out of 5000000
+ 40783 multiletter control sequences out of 15000+600000
+ 502798 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,8n,71p,1808b,3029s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,8n,71p,1808b,1744s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.p
 fb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-di
 st/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (27 pages, 448561 bytes).
+Output written on main.pdf (35 pages, 841523 bytes).
 PDF statistics:
- 437 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 104 named destinations out of 1000 (max. 500000)
- 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

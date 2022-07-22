@@ -1,0 +1,113 @@
+\chapter{PERANCANGAN SISTEM}
+
+\section{Desain Sistem}
+Desain dan implementasi tugas akhir ini bertujuan untuk merancang sebuah sistem algoritma komunikasi antar-UAV menggunakan jaringan mesh berbasis ESP32. Perancangan sistem terdiri dari proses perancangan blok diagram sistem, penjelasan sistem secara umum, perancangan perangkat keras sistem, serta perancangan dan penjelasan perangkat lunak sistem yang meliputi algoritma komunikasi tersebut.
+
+\subsection{Diagram Blok}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{./assets/DiagramBlokTANew}
+	\caption{Diagram blok sistem.}
+\end{figure}
+
+Gambar 3.1 merupakan diagram blok dari sistem yang dirancang. Secara keseluruhan, sistem dapat dibagi menjadi 3 bagian, yakni \textbf{\textit{Sender}}, \textbf{\textit{Flying Receiver}}, dan \textbf{\textit{Base Station Receiver}}.
+\subsubsection{Sender Node}
+Sender node merupakan board ESP32 yang diterbangkan menggunakan drone \textit{Victim Finder} dan bertugas menerima data lokasi dari modul GPS dan kemudian mengirimkan data lokasi tersebut berdasarkan permintaan dari \textit{receiver}. Board ESP32 mendapatkan data lokasi dari modul GPS dengan menggunakan komunikasi serial UART pada baud rate 9600, yang kemudian modul GPS mengirimkan data lokasi berupa kalimat-kalimat NMEA. Data tersebut kemudian diolah menggunakan library TinyGPS++ untuk memudahkan penafsiran kalimat-kalimat NMEA tersebut.
+
+Karena sistem \textit{messaging} di PainlessMesh menggunakan JSON, maka data lokasi yang telah didapatkan (lintang, bujur, ketinggian, dan jumlah satelit yang sudah \textit{lock}) dikirimkan berupa JSON \textit{values} dengan \textit{key} berupa \textit{latitude, longitude, altitude,} dan \textit{satellite}. Data JSON tersebut dihitung besarnya dalam byte untuk kepentingan pengukuran \textit{throughput}, kemudian ditambahkan \textit{timestamp} pengiriman.
+
+\subsubsection{Flying Receiver Node}
+Receiver node ini merupakan board ESP32 yang dilengkapi board MicroSD untuk kepentingan \textit{data logging}. Board ini akan diterbangkan oleh sebuah drone dan bertugas melakukan permintaan data lokasi kepada node Sender, sekaligus melakukan pengujian kinerja jaringan, yakni pengujian \textit{throughput}, pengujian \textit{packet loss}, dan pengujian \textit{round-trip delay}. Hasil dari pengujian tersebut kemudian disimpan dalam sebuah kartu microSD untuk diolah dan dianalisis.
+
+\subsubsection{Base Station Receiver Node}
+Receiver node ini merupakan board ESP32 yang disambungkan secara serial dengan sebuah board ESP8266 yang bertugas menjadi web server untuk menampilkan data lokasi pada sebuah situs web. Konfigurasi ini diperlukan karena keterbatasan pengujian, dimana mode 802.11LR pada ESP32 merupakan mode \textit{proprietary} yang tidak didukung oleh piranti WiFi lainnya, serta jaringan PainlessMesh yang membutuhkan mode AP dari ESP32, sedangkan board ESP32 hanya mendukung maksimal 1 AP per board. Oleh karena itu, dibutuhkan satu board lain untuk menjadi web server.
+
+\subsection{Fungsi dan Fitur}
+Sistem yang dirancang untuk tugas akhir ini memiliki fungsi komunikasi data lokasi dari satu drone kepada drone lain dan \textit{base station}. Karena posisi antar drone dan \textit{base station} yang bervariasi serta target penggunaan di daerah tanpa infrastruktur, maka dibutuhkan metode komunikasi yang fleksibel terhadap disrupsi dan tidak bergantung pada infrastruktur yang sudah ada, oleh karena itu digunakan sebuah jaringan mesh menggunakan PainlessMesh sehingga komunikasi dapat terjalin pada jaringan yang mampu melakukan \textit{self-healing} dan \textit{autoconfiguration} ketika terjadi disrupsi.
+
+\section{Desain Perangkat Keras}
+Perangkat yang digunakan pada sistem ini adalah tiga buah board DOIT ESP32 Development Kit, sebuah board NodeMCU ESP8266, sebuah modul GPS NEO-6M, sebuah board modul MicroSD, baterai Lithium-Polymer (LiPo) 2S 1500 mAh, sebuah linear regulator LM7805, dan dua buah drone. Sistem dapat menerima daya dari baterai LiPo melalui konektor \textit{balance} JST XH, yang kemudian tegangannya diturunkan menggunakan linear regulator LM7805 ke tegangan 5V.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./assets/DiagramHWNew}
+	\caption{Diagram perangkat keras sistem.}
+\end{figure}
+Perancangan sistem membutuhkan komponen-komponen pendukung untuk dapat merealisasikan sistem, diantaranya adalah board DOIT-ESP32-DEVKIT, modul GPS NEO-6M, drone MJX Bugs 5W, dan \textit{power supply}, dengan spesifikasi sebagai berikut:
+\begin{enumerate}
+	\item DOIT-ESP32-DEVKIT\newline Board DOIT-ESP32-DEVKIT adalah sebuah \textit{development kit} yang menggunakan mikrokontroler ESP32, sehingga memiliki kapabilitas Wi-Fi dan Bluetooth. Pada perancangan sistem ini, ESP32 digunakan sebagai modul komunikasi pada drone dan \textit{base station}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{./assets/ESP32}
+		\caption{Board DOIT-ESP32-DEVKIT}
+	\end{figure}
+	\captionof{table}{Spesifikasi DOIT-ESP32-DEVKIT}
+	\begin{longtable}{|p{2cm}|p{8cm}|}
+		\hline
+		SOC&2x Xtensa 32-bit LX6 microprocessor up to 240MHz, 448KB ROM, 520KB SRAM\\
+		\hline
+		Konektivitas&WiFi 802.11 (B/G/N/LR), Bluetooth\\
+		\hline
+		IO&18 channel ADC, 10 capacitive sensing GPIO, 3 UART interfaces, 3 SPI interfaces, 2 I$^2$C interfaces, 16 PWM output channels, 2 channel DAC, 2 I$^2$S interfaces\\
+		\hline
+		Masukan tegangan&5V regulated, 6V - 20V unregulated\\
+		\hline
+		Tegangan operasional&3.3V\\
+		\hline
+		Temperatur operasi&-40\textdegree C - 85\textdegree C\\
+		\hline
+	\end{longtable}
+	\item NEO-6M\newline NEO-6M adalah modul GPS \textit{receiver} \textit{standalone} yang menggunakan u-blox 6 positioning engine. Pada perancangan sistem ini, NEO-6M digunakan sebagai modul GPS untuk mendapatkan data lokasi untuk dikirimkan.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{./assets/NEO6M}
+		\caption{Modul GPS NEO-6M}
+	\end{figure}
+	\captionof{table}{Spesifikasi DOIT-ESP32-DEVKIT}
+	\begin{longtable}{|p{2cm}|p{8cm}|}
+		\hline
+		\textit{Time to first fix}&27 detik \textit{cold start}, 27 detik \textit{warm start}, 1 detik \textit{hot start}\\
+		\hline
+		Sensitivitas&-161dBm \textit{(tracking and navigation)}, -160dBm \textit{(reacquisition)}, -147dBm \textit{(cold start)}, -156dBm \textit{(hot start)}.\\
+		\hline
+		Akurasi posisi horizontal&2.5m\\
+		\hline
+		Masukan tegangan&2.7V - 3.6V\\
+		\hline
+		Maksimum arus&67mA\\
+		\hline
+		Temperatur operasi&-40\textdegree C - 85\textdegree C\\
+		\hline
+	\end{longtable}
+	\item \textit{Power supply} yang digunakan pada \textit{Sender node} dan \textit{Flying receiver} node menggunakan sebuah linear regulator LM7805 yang dihubungkan pada sebuah baterai LiPo 2S 7.4V, sehingga menghasilkan tegangan keluaran 5V.
+	
+	\item MJX Bugs 5W\newline Pada perancangan sistem, drone ini digunakan untuk membawa board ESP32 dan modul GPS sebagai node \textit{sender}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{./assets/MJX}
+		\caption{Drone MJX Bugs 5W}
+	\end{figure}
+	\captionof{table}{Spesifikasi drone MJX Bugs 5W}
+	\begin{longtable}{|p{3cm}|p{7cm}|}
+		\hline
+		Frekuensi Remote Control&2.4GHz\\
+		\hline
+		Baterai drone&7.4V 2S 1800mAh\\
+		\hline
+		Jarak Remote Control&300-500m\\
+		\hline
+		Motor&1800KV BLDC\\
+		\hline
+		ESC&6A Brushless\\
+		\hline
+	\end{longtable}
+\end{enumerate}
+
+\section{Desain Perangkat Lunak}
+\subsection{Sender Node}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./assets/FlowchartSenderNew}
+	\caption{Diagram alur sender node.}
+\end{figure}
+Gambar 3.6 menunjukkan diagram alur sistem pada node sender. Pada bagian kiri adalah proses inisialisasi sistem, yakni inisialisasi jaringan mesh dan inisialisasi sistem GPS.

@@ -29,6 +29,9 @@
 \frontmatter
 \pagestyle{myheadings}
 \setcounter{page}{1}
+
+% Menyalakan section depth numbering
+\setcounter{secnumdepth}{5}
 	
 % Halaman pengesahan
 \include{./src/pengesahan}
@@ -47,6 +50,7 @@
 %Menggunakan angka romawi dalam penomoran bab
 \renewcommand{\thechapter}{\Roman{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 % Daftar isi
@@ -64,6 +68,8 @@
 \include{./src/bab1}
 % Bab 2
 \include{./src/bab2}
+% Bab 3
+\include{./src/bab3}
 % Daftar Pustaka
 \selectlanguage{english}
 \printbibliography[title={DAFTAR PUSTAKA}]
