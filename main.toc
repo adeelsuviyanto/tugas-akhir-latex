@@ -39,4 +39,5 @@
 \contentsline {section}{\numberline {3.2}Desain Perangkat Keras}{16}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Desain Perangkat Lunak}{21}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Sender Node}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Flying Receiver Node}{23}{subsection.3.3.2}%
 \babel@toc {english}{}\relax 

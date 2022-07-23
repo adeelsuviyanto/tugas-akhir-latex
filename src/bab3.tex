@@ -110,4 +110,37 @@ Perancangan sistem membutuhkan komponen-komponen pendukung untuk dapat merealisa
 	\includegraphics[scale=0.35]{./assets/FlowchartSenderNew}
 	\caption{Diagram alur sender node.}
 \end{figure}
-Gambar 3.6 menunjukkan diagram alur sistem pada node sender. Pada bagian kiri adalah proses inisialisasi sistem, yakni inisialisasi jaringan mesh dan inisialisasi sistem GPS.
+Gambar 3.6 menunjukkan diagram alur sistem pada node sender. Pada bagian kiri adalah proses inisialisasi sistem, yakni inisialisasi jaringan mesh dan inisialisasi sistem GPS. Pada proses inisialisasi jaringan mesh, board ESP32 melakukan \textit{scanning} terhadap SSID jaringan mesh yang sudah ditetapkan, dan jika ditemukan akan mencoba bergabung dalam jaringan mesh tersebut. Jika SSID tidak ditemukan, maka board ESP32 akan membuat jaringan mesh tersebut dengan sendirinya. Setelah inisialisasi jaringan sudah selesai, maka board ESP32 akan menunggu koneksi dari node lain serta menunggu permintaan dari sebuah node receiver.
+
+Untuk proses inisialisasi GPS, board ESP32 memulai sebuah koneksi serial UART dengan modul GPS NEO-6M menggunakan \textit{library} Software Serial dengan baud rate 9600 bps. Modul GPS NEO-6M membutuhkan sebuah input konstan dari koneksi UART, oleh karena itu board ESP32 secara terus-menerus mengirimkan karakter kepada modul GPS tersebut. Terdapat waktu tunggu lima detik untuk menunggu respon dari modul GPS, jika tidak ada input dari modul GPS setelah lima detik sejak board pertama dinyalakan, maka board akan menghentikan eksekusi program dan menampilkan data mentah dari pin RX di Serial Monitor. Sedangkan jika modul GPS berhasil mengirimkan data melalui UART, maka eksekusi program diteruskan, dan data dari modul GPS tersebut yang berupa kalimat-kalimat NMEA akan ditafsirkan menggunakan \textit{library} TinyGPS++ untuk mendapatkan data lokasi yang kemudian disimpan dalam memori.
+
+Setelah proses inisialisasi sistem selesai, maka board ESP32 akan menunggu permintaan dari node receiver. Terdapat tiga jenis permintaan/\textit{query} yang diterima oleh node sender, yaitu:
+\begin{enumerate}
+	\item \textit{Node Type Query}\newline \textit{Query} ini merupakan sebuah permintaan dari node receiver yang menanyakan tipe node apa yang telah terhubung dalam jaringan mesh. Respon dari \textit{query} ini untuk node sender adalah mengirimkan sebuah pesan JSON dengan \textit{key} "nodeType" dan \textit{value} "sender".
+	\item \textit{GPS Status Query}\newline \textit{Query} ini adalah permintaan dari node receiver untuk mengecek status GPS node sender dan kesiapan node sender untuk mengirimkan data lokasi. Kriteria kesiapan tersebut adalah jumlah satelit yang sudah \textit{fix} $\geq$ 3; atau nilai lintang, bujur, dan ketinggian tidak nol. Node sender akan mengirimkan sebuah pesan JSON dengan \textit{key} "locationReady" dan \textit{value} 0 jika kriteria kesiapan GPS belum terpenuhi, dan 1 jika kriteria sudah terpenuhi.
+	\item \textit{Request Location Query}\newline \textit{Query} ini adalah permintaan data lokasi dari node receiver. Node sender akan mengirimkan sebuah pesan JSON dengan key \textit{latitude, longitude, altitude}, dan \textit{satellite}, berdasarkan data yang sudah didapatkan dari modul GPS.
+\end{enumerate}
+Node sender juga menerima permintaan pengecekan \textit{round-trip delay} dari node receiver yang menggunakan fungsi \verb|startDelayMeas()|. Fungsi tersebut juga digunakan untuk pengujian \textit{packet loss}.
+
+\subsection{Flying Receiver Node}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{./assets/FlowchartReceiver}
+	\caption{Diagram alur node flying receiver, program penarikan data lokasi dari node sender.}
+\end{figure}
+Flying receiver node adalah node ESP32 yang diterbangkan menggunakan sebuah drone yang bertugas menerima data lokasi dari sender node, menguji kinerja jaringan terbang, sekaligus mencatat ke sebuah kartu memori MicroSD. Tugas-tugas tersebut dibagi menjadi dua program pada satu node, yaitu program pertama yang menarik data lokasi dari sender node, dan program kedua yang menguji kinerja jaringan setelah selesainya pelaksanaan program pertama.
+
+Pelaksanaan masing-masing task pada node ini terjadwal menggunakan fitur \textit{Task Scheduler}, dan dilaksanakan secara berurutan, yakni melakukan koneksi pada jaringan mesh, melakukan \textit{query} tipe node-node lainnya pada jaringan, melakukan \textit{query} kondisi GPS pada node sender, dan melakukan \textit{query} data lokasi dari sender node.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{./assets/FlowchartNetworkTest}
+	\caption{Diagram alur node flying receiver, program pengujian jaringan.}
+\end{figure}
+
+Berdasarkan yang dipaparkan pada Bab 2, pengujian kinerja jaringan yang dilakukan adalah pengujian \textit{throughput}, \textit{round-trip delay}, dan \textit{packet loss}.
+\begin{enumerate}
+	\item \textit{Throughput}\newline Pengujian \textit{throughput} dilakukan bersamaan dengan program penarikan data lokasi, yakni dengan menghitung besar paket data lokasi yang dikirim, membandingkan waktu pengiriman dan waktu penerimaan paket data, lalu membagi besar paket data tersebut dengan selisih waktu pengiriman dan penerimaan paket data.
+	\item \textit{Round-trip delay}\newline Pengujian \textit{round-trip delay} menggunakan fungsi \verb|startdelayMeas()| pada library PainlessMesh yang menghasilkan \textit{return value} sebesar nilai \textit{delay} dalam mikrosekon.
+	\item \textit{Packet loss}\newline Pengujian \textit{packet loss} menumpang pada pengujian \textit{round-trip delay} yang dilakukan sebanyak 10 kali, lalu membandingkan berapa kali fungsi \verb|startdelayMeas()| dipanggil terhadap jumlah output yang didapatkan, yakni respon dari node sender.
+\end{enumerate}
