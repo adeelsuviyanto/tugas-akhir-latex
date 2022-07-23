@@ -143,4 +143,5 @@ Berdasarkan yang dipaparkan pada Bab 2, pengujian kinerja jaringan yang dilakuka
 	\item \textit{Throughput}\newline Pengujian \textit{throughput} dilakukan bersamaan dengan program penarikan data lokasi, yakni dengan menghitung besar paket data lokasi yang dikirim, membandingkan waktu pengiriman dan waktu penerimaan paket data, lalu membagi besar paket data tersebut dengan selisih waktu pengiriman dan penerimaan paket data.
 	\item \textit{Round-trip delay}\newline Pengujian \textit{round-trip delay} menggunakan fungsi \verb|startdelayMeas()| pada library PainlessMesh yang menghasilkan \textit{return value} sebesar nilai \textit{delay} dalam mikrosekon.
 	\item \textit{Packet loss}\newline Pengujian \textit{packet loss} menumpang pada pengujian \textit{round-trip delay} yang dilakukan sebanyak 10 kali, lalu membandingkan berapa kali fungsi \verb|startdelayMeas()| dipanggil terhadap jumlah output yang didapatkan, yakni respon dari node sender.
+	\item \textit{Signal strength}\newline Pendataan \textit{signal strength} dilakukan setiap kali ada permintaan data dari receiver, menggunakan fungsi \verb|WiFi.RSSI()| dari ESP32.
 \end{enumerate}

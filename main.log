@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.21)  23 JUL 2022 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.7.9)  23 JUL 2022 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2038,8 +2038,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23141 strings out of 478238
- 408805 string characters out of 5850456
+ 23142 strings out of 478238
+ 408812 string characters out of 5850457
  1158656 words of memory out of 5000000
  40804 multiletter control sequences out of 15000+600000
  502798 words of font info for 89 fonts, out of 8000000 for 9000
@@ -2051,10 +2051,10 @@ ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 fb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-di
 st/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (39 pages, 935206 bytes).
+Output written on main.pdf (39 pages, 936228 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
- 151 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 507 compressed objects within 6 object streams
+ 152 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 
