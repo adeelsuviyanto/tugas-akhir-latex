@@ -125,7 +125,7 @@ Node sender juga menerima permintaan pengecekan \textit{round-trip delay} dari n
 \subsection{Flying Receiver Node}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{./assets/FlowchartReceiver}
+	\includegraphics[scale=0.6]{./assets/FlowchartReceiver}
 	\caption{Diagram alur node flying receiver, program penarikan data lokasi dari node sender.}
 \end{figure}
 Flying receiver node adalah node ESP32 yang diterbangkan menggunakan sebuah drone yang bertugas menerima data lokasi dari sender node, menguji kinerja jaringan terbang, sekaligus mencatat ke sebuah kartu memori MicroSD. Tugas-tugas tersebut dibagi menjadi dua program pada satu node, yaitu program pertama yang menarik data lokasi dari sender node, dan program kedua yang menguji kinerja jaringan setelah selesainya pelaksanaan program pertama.
