@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.21)  1 AUG 2022 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.6.21)  21 AUG 2022 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,44 +758,44 @@ Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'indonesian'.
-(csquotes)                Using fallback style on input line 23.
+(csquotes)                Using fallback style on input line 20.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (./main.aux (./src/cover.aux) (./src/pengesahan.aux) (./src/orisinalitas.aux)
 (./src/abstrak.aux) (./src/abstract.aux) (./src/katapengantar.aux)
 (./src/ucapanterimakasih.aux) (./src/daftarisi.aux) (./src/daftargambar.aux)
 (./src/daftartabel.aux) (./src/daftarsingkatan.aux) (./src/bab1.aux)
-(./src/bab2.aux) (./src/bab3.aux)
+(./src/bab2new.aux) (./src/bab3.aux) (./src/bab4.aux)
 (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing basic data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 20.
 LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
- 23.
+ 20.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -819,7 +819,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 20.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -832,9 +832,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count442
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -879,7 +879,7 @@ Package biblatex Info: Trying to load language 'indonesian'...
 Package biblatex Info: ... file 'indonesian.lbx' not found.
 
 Package biblatex Warning: Language 'indonesian' not supported.
-(biblatex)                Using dummy definitions on input line 23.
+(biblatex)                Using dummy definitions on input line 20.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -894,8 +894,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 23.
-Package biblatex Info: Reference segment=0 on input line 23.
+Package biblatex Info: Reference section=0 on input line 20.
+Package biblatex Info: Reference segment=0 on input line 20.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -903,7 +903,7 @@ Package caption Info: End \AtBeginDocument code.
 
 
 (./src/cover.tex
-<./assets/logotelu.png, id=148, 398.142pt x 483.2235pt>
+<./assets/logotelu.png, id=213, 398.142pt x 483.2235pt>
 File: ./assets/logotelu.png Graphic file (type png)
 <use ./assets/logotelu.png>
 Package pdftex.def Info: ./assets/logotelu.png  used on input line 23.
@@ -1069,76 +1069,76 @@ l.11
 ] [2] [3]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 76.
+(caption)                particular \caption on input line 75.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 []\OT1/ptm/b/n/12 Tanggal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 []\OT1/ptm/m/n/12 Mengidentifikasi per-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 \OT1/ptm/m/n/12 ma-sa-lah-an dan stu-di
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 83--84
+Underfull \hbox (badness 2707) in paragraph at lines 82--83
 []\OT1/ptm/m/n/12 Diagram blok sis-tem,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--85
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 []\OT1/ptm/m/n/12 5 No-vem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 []\OT1/ptm/m/n/12 Pendataan kom-po-nen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
 []\OT1/ptm/m/n/12 3 De-sem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 []\OT1/ptm/m/n/12 Implementasi sis-tem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []\OT1/ptm/m/n/12 Penyusunan La-por-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []\OT1/ptm/m/n/12 22 Ju-li
  []
 
 
-Overfull \hbox (31.5472pt too wide) in paragraph at lines 77--94
+Overfull \hbox (31.5472pt too wide) in paragraph at lines 76--93
  [] 
  []
 
 [4] [5]) [6]
-\openout2 = `./src/bab2.aux'.
+\openout2 = `./src/bab2new.aux'.
 
- (./src/bab2.tex
+ (./src/bab2new.tex
 Bab II.
-<./assets/IOProses.png, id=352, 683.55376pt x 261.97874pt>
+<./assets/IOProses.png, id=448, 683.55376pt x 261.97874pt>
 File: ./assets/IOProses.png Graphic file (type png)
 <use ./assets/IOProses.png>
-Package pdftex.def Info: ./assets/IOProses.png  used on input line 15.
+Package pdftex.def Info: ./assets/IOProses.png  used on input line 5.
 (pdftex.def)             Requested size: 410.13542pt x 157.18845pt.
 
-Overfull \hbox (11.79683pt too wide) in paragraph at lines 15--16
+Overfull \hbox (11.79683pt too wide) in paragraph at lines 5--6
 [][] 
  []
 
@@ -1148,888 +1148,1007 @@ Overfull \hbox (11.79683pt too wide) in paragraph at lines 15--16
 
 
  <./assets/IOProses.png>]
-<./assets/Diagram Sistem.png, id=366, 631.35875pt x 339.2675pt>
-File: ./assets/Diagram Sistem.png Graphic file (type png)
-<use ./assets/Diagram Sistem.png>
-Package pdftex.def Info: ./assets/Diagram Sistem.png  used on input line 21.
-(pdftex.def)             Requested size: 315.6786pt x 169.63333pt.
- [8 <./assets/Diagram Sistem.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 36.
+(caption)                particular \caption on input line 15.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 41--41
+Underfull \hbox (badness 1910) in paragraph at lines 20--20
 []|\OT1/ptm/m/n/10 Use of Hi-gh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 Mo-bi-li-ty
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 No-des to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 ne-cti-vi-ty in
  []
 
 
-Overfull \hbox (1.27367pt too wide) in paragraph at lines 41--41
+Overfull \hbox (1.27367pt too wide) in paragraph at lines 20--20
 []|\OT1/ptm/m/n/10 PainlessMesh-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 tu-nis-tic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 Mo-bi-le Ad
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 Hoc Ne-
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 41--41
+Underfull \hbox (badness 1708) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 no-des ber-u-pa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 mes-se-nger
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 \OT1/ptm/m/n/10 da-ta an-ta-ra
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 []|\OT1/ptm/m/n/10 Penelitian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 meng-im-ple-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 men-ta-sik-an
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 41--42
+Underfull \hbox (badness 1708) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 me-to-de se-cu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 ri-ty ber-ba-sis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 secret-key
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 cr-yp-to-gra-phy.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 Pac-ket loss
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 41--42
+Underfull \hbox (badness 2564) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 an-ta-ra sen-sor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 dan se-rver
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 4,48% pa-da
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 41--42
+Underfull \hbox (badness 5288) in paragraph at lines 20--21
 \OT1/ptm/m/n/10 pac-ket me-le-
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 42--43
+Underfull \hbox (badness 6001) in paragraph at lines 21--22
 []|\OT1/ptm/m/n/10 Tidak meng-
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 42--43
+Underfull \hbox (badness 1057) in paragraph at lines 21--22
 \OT1/ptm/m/n/10 u-ji round-trip
  []
 
 
-Overfull \hbox (2.43355pt too wide) in paragraph at lines 44--44
+Overfull \hbox (2.43355pt too wide) in paragraph at lines 23--23
 []|\OT1/ptm/m/n/10 [[]10[]]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []|\OT1/ptm/m/n/10 Performance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []|\OT1/ptm/m/n/10 Pengujian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 one-way
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 de-lay dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 da-ta ra-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 Pa-i-nless-Me-sh
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 44--44
+Underfull \hbox (badness 6641) in paragraph at lines 23--23
 []|\OT1/ptm/m/n/10 Jumlah no-de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 ber-ko-re-la-si
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 de-ngan me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 ning-kat-nya
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 si-ngle hop
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 de-lay dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 me-nu-run-nya
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 sta-bi-li-tas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 me-nen-tuk-an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []|\OT1/ptm/m/n/10 Penelitian
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 44--44
+Underfull \hbox (badness 6641) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 meng-u-ji da-ri
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 44--44
+Underfull \hbox (badness 3407) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 2 hing-ga 16
  []
 
 
-Underfull \hbox (badness 4995) in paragraph at lines 44--44
+Underfull \hbox (badness 4995) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 no-de se-hing-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 ga ter-li-hat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 gam-bar-an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 ka-sar sta-bi-
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 44--44
+Underfull \hbox (badness 3735) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 li-tas ja-ring-an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 Pa-i-nless-Me-
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 44--44
+Underfull \hbox (badness 2103) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 sh. Ki-ner-ja
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 de me-mi-li-ki
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 de-lay 2.49
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 ms se-hing-ga
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 cu-kup un-tuk
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 44--44
+Underfull \hbox (badness 1694) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 apli-ka-si yang
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 \OT1/ptm/m/n/10 ti-dak ter-la-lu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 []|\OT1/ptm/m/n/10 ESP8266
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 ti-dak me-mi-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 44--45
+Underfull \hbox (badness 2547) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 li-ki per-for-ma
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 yang cu-kup
  []
 
 
-Underfull \hbox (badness 6641) in paragraph at lines 44--45
+Underfull \hbox (badness 6641) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 un-tuk meng-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 i-rimk-an dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 me-ne-ri-ma
  []
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 44--45
+Underfull \hbox (badness 6675) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 pa-ylo-ad da-ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 yang be-sar.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 Pe-ngu-ji-an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 da-ta ra-te
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 44--45
+Underfull \hbox (badness 2547) in paragraph at lines 23--24
 \OT1/ptm/m/n/10 di-ba-ta-si pa-da
  []
 
 
-Overfull \hbox (2.43355pt too wide) in paragraph at lines 46--46
+Overfull \hbox (2.43355pt too wide) in paragraph at lines 25--25
 []|\OT1/ptm/m/n/10 [[]11[]]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []|\OT1/ptm/m/n/10 Implementing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 sh Ne-twork
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 To-po-lo-gy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 Be-twe-en
  []
 
 
-Underfull \hbox (badness 3281) in paragraph at lines 46--46
+Underfull \hbox (badness 3281) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 Mul-ti-ple Wi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 Fi Po-we-red
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []|\OT1/ptm/m/n/10 Penggunaan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 3 no-de Pa-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 i-nless-Me-sh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 ber-ba-sis
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 46--46
+Underfull \hbox (badness 2512) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 ESP32 un-tuk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 ko-mu-ni-ka-si
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 mul-ti-di-re-ctio-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 nal ou-tput
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 sen-sor dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 in-put pu-sh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 self-healing,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 ja-di dis-ru-psi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 ma-ka me-sh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 tis meng-a-tur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []|\OT1/ptm/m/n/10 Implementasi
  []
 
 
-Underfull \hbox (badness 8170) in paragraph at lines 46--46
+Underfull \hbox (badness 8170) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 3 no-de dan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 arah da-ta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 bo-lak ba-lik
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 \OT1/ptm/m/n/10 da-pat di-la-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 46--47
+Underfull \hbox (badness 2547) in paragraph at lines 25--26
 \OT1/ptm/m/n/10 ngu-ji-an ja-rak
  []
 
 
-Overfull \hbox (2.43355pt too wide) in paragraph at lines 48--48
+Overfull \hbox (2.43355pt too wide) in paragraph at lines 27--27
 []|\OT1/ptm/m/n/10 [[]12[]]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 mo-ni-to-ring
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 48--48
+Underfull \hbox (badness 3601) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 sys-tem using
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 Wi-Fi me-sh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 []|\OT1/ptm/m/n/10 Implementasi
  []
 
 
-Underfull \hbox (badness 5726) in paragraph at lines 48--48
+Underfull \hbox (badness 5726) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 9 no-de ber-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 ba-sis ESP32
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 dan ESP-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 Mesh un-tuk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 mo-ni-to-ring
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 ting-kat de-bu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 pa-da su-a-tu
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 de-ngan me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 a-su-re-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 []|\OT1/ptm/m/n/10 Mesh da-pat
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 48--48
+Underfull \hbox (badness 5403) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 pa in-te-rven-si
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 ma-nu-sia,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 self-healing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
 \OT1/ptm/m/n/10 dan auto-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 []|\OT1/ptm/m/n/10 Jaringan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 me-mi-li-ki
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 48--49
+Underfull \hbox (badness 1354) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 to-po-lo-gi tree,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 buk-an me-sh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 mur-ni, se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 hing-ga ji-ka
  []
 
 
-Underfull \hbox (badness 6825) in paragraph at lines 48--49
+Underfull \hbox (badness 6825) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 ter-ja-di gang-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 gu-an pa-da
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 no-de akar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 ma-ka pro-ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \OT1/ptm/m/n/10 self-heal
  []
 
-[9] [10]
-<./assets/ESP32.jpg, id=392, 1003.75pt x 1003.75pt>
-File: ./assets/ESP32.jpg Graphic file (type jpg)
-<use ./assets/ESP32.jpg>
-Package pdftex.def Info: ./assets/ESP32.jpg  used on input line 66.
-(pdftex.def)             Requested size: 100.38087pt x 100.38087pt.
-<./assets/painlessmesh.png, id=393, 497.86pt x 330.23375pt>
-File: ./assets/painlessmesh.png Graphic file (type png)
-<use ./assets/painlessmesh.png>
-Package pdftex.def Info: ./assets/painlessmesh.png  used on input line 77.
-(pdftex.def)             Requested size: 248.92938pt x 165.11646pt.
+[8] [9] [10]
+<./assets/meshpartial.png, id=486, 562.1pt x 354.32375pt>
+File: ./assets/meshpartial.png Graphic file (type png)
+<use ./assets/meshpartial.png>
+Package pdftex.def Info: ./assets/meshpartial.png  used on input line 65.
+(pdftex.def)             Requested size: 281.04932pt x 177.16144pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./assets/ESP32.jpg>]
-<./assets/PainlessMeshJSON.png, id=402, 322.20375pt x 148.555pt>
+[11]
+<./assets/ESP32.jpg, id=495, 1003.75pt x 1003.75pt>
+File: ./assets/ESP32.jpg Graphic file (type jpg)
+<use ./assets/ESP32.jpg>
+Package pdftex.def Info: ./assets/ESP32.jpg  used on input line 77.
+(pdftex.def)             Requested size: 100.38087pt x 100.38087pt.
+ [12 <./assets/meshpartial.png> <./assets/ESP32.jpg>]
+<./assets/painlessmesh.png, id=502, 497.86pt x 330.23375pt>
+File: ./assets/painlessmesh.png Graphic file (type png)
+<use ./assets/painlessmesh.png>
+Package pdftex.def Info: ./assets/painlessmesh.png  used on input line 88.
+(pdftex.def)             Requested size: 248.92938pt x 165.11646pt.
+ [13 <./assets/painlessMesh.png (PNG copy)>]
+<./assets/PainlessMeshJSON.png, id=511, 322.20375pt x 148.555pt>
 File: ./assets/PainlessMeshJSON.png Graphic file (type png)
 <use ./assets/PainlessMeshJSON.png>
-Package pdftex.def Info: ./assets/PainlessMeshJSON.png  used on input line 88.
+Package pdftex.def Info: ./assets/PainlessMeshJSON.png  used on input line 106.
+
 (pdftex.def)             Requested size: 161.10147pt x 74.27731pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-
- []
-
-<./assets/NMEASentences.png, id=404, 523.9575pt x 157.33781pt>
+<./assets/NMEASentences.png, id=514, 523.9575pt x 157.33781pt>
 File: ./assets/NMEASentences.png Graphic file (type png)
 <use ./assets/NMEASentences.png>
-Package pdftex.def Info: ./assets/NMEASentences.png  used on input line 99.
+Package pdftex.def Info: ./assets/NMEASentences.png  used on input line 122.
 (pdftex.def)             Requested size: 261.9781pt x 78.6687pt.
-[12 <./assets/painlessMesh.png (PNG copy)> <./assets/PainlessMeshJSON.png>]
-[13 <./assets/NMEASentences.png (PNG copy)>]
-<./assets/PingTest.png, id=420, 402.50375pt x 332.24126pt>
+ [14 <./assets/PainlessMeshJSON.png>] [15 <./assets/NMEASentences.png (PNG copy
+)>]
+<./assets/PingTest.png, id=532, 402.50375pt x 332.24126pt>
 File: ./assets/PingTest.png Graphic file (type png)
 <use ./assets/PingTest.png>
-Package pdftex.def Info: ./assets/PingTest.png  used on input line 130.
+Package pdftex.def Info: ./assets/PingTest.png  used on input line 161.
 (pdftex.def)             Requested size: 281.7507pt x 232.56728pt.
-) [14 <./assets/PingTest.png>]
+) [16 <./assets/PingTest.png>]
 \openout2 = `./src/bab3.aux'.
 
-
-(./src/bab3.tex
+ (./src/bab3.tex
 Bab III.
-<./assets/DiagramBlokTANew.png, id=426, 758.835pt x 312.16624pt>
-File: ./assets/DiagramBlokTANew.png Graphic file (type png)
-<use ./assets/DiagramBlokTANew.png>
-Package pdftex.def Info: ./assets/DiagramBlokTANew.png  used on input line 9.
-(pdftex.def)             Requested size: 379.41658pt x 156.08273pt.
-[15
-
-
-
-
- <./assets/DiagramBlokTANew.png>]
-<./assets/DiagramHWNew.png, id=434, 1186.4325pt x 613.29124pt>
-File: ./assets/DiagramHWNew.png Graphic file (type png)
-<use ./assets/DiagramHWNew.png>
-Package pdftex.def Info: ./assets/DiagramHWNew.png  used on input line 33.
+<./assets/DiagramHWNewV2.png, id=539, 1186.4325pt x 613.29124pt>
+File: ./assets/DiagramHWNewV2.png Graphic file (type png)
+<use ./assets/DiagramHWNewV2.png>
+Package pdftex.def Info: ./assets/DiagramHWNewV2.png  used on input line 6.
 (pdftex.def)             Requested size: 415.2576pt x 214.65514pt.
 
-Overfull \hbox (16.919pt too wide) in paragraph at lines 33--34
+Overfull \hbox (16.919pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-[16]
-File: ./assets/ESP32.jpg Graphic file (type jpg)
-<use ./assets/ESP32.jpg>
-Package pdftex.def Info: ./assets/ESP32.jpg  used on input line 41.
-(pdftex.def)             Requested size: 200.74644pt x 200.74644pt.
+[17
+
+
+
+
+ <./assets/DiagramHWNewV2.png>]
+<./assets/DiagramBlokTANew.png, id=548, 758.835pt x 312.16624pt>
+File: ./assets/DiagramBlokTANew.png Graphic file (type png)
+<use ./assets/DiagramBlokTANew.png>
+Package pdftex.def Info: ./assets/DiagramBlokTANew.png  used on input line 26.
+(pdftex.def)             Requested size: 379.41658pt x 156.08273pt.
+ [18 <./assets/DiagramBlokTANew.png>]
+[19]
+<./assets/NodeMCU32.jpg, id=567, 647.41875pt x 647.41875pt>
+File: ./assets/NodeMCU32.jpg Graphic file (type jpg)
+<use ./assets/NodeMCU32.jpg>
+Package pdftex.def Info: ./assets/NodeMCU32.jpg  used on input line 53.
+(pdftex.def)             Requested size: 258.9629pt x 258.9629pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 44.
+(caption)                particular \caption on input line 56.
 See the caption package documentation for explanation.
 
-[17 <./assets/DiagramHWNew.png>]
-Overfull \hbox (3.7057pt too wide) in paragraph at lines 49--49
+
+Overfull \hbox (3.7057pt too wide) in paragraph at lines 61--61
 []|\OT1/ptm/m/n/12 Konektivitas| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\OT1/ptm/m/n/12 Masukan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
 []|\OT1/ptm/m/n/12 Tegangan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []|\OT1/ptm/m/n/12 Temperatur
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-7.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+9.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<./assets/NEO6M.jpg, id=447, 401.5pt x 401.5pt>
-File: ./assets/NEO6M.jpg Graphic file (type jpg)
-<use ./assets/NEO6M.jpg>
-Package pdftex.def Info: ./assets/NEO6M.jpg  used on input line 63.
-(pdftex.def)             Requested size: 160.59715pt x 160.59715pt.
+) [20 <./assets/NodeMCU32.jpg>]
+File: ./assets/ESP32.jpg Graphic file (type jpg)
+<use ./assets/ESP32.jpg>
+Package pdftex.def Info: ./assets/ESP32.jpg  used on input line 76.
+(pdftex.def)             Requested size: 200.74644pt x 200.74644pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 66.
+(caption)                particular \caption on input line 79.
 See the caption package documentation for explanation.
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+Overfull \hbox (3.7057pt too wide) in paragraph at lines 84--84
+[]|\OT1/ptm/m/n/12 Konektivitas| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[]|\OT1/ptm/m/n/12 Masukan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\OT1/ptm/m/n/12 Tegangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\OT1/ptm/m/n/12 Temperatur
+ []
+
+[21]
+<./assets/NodeMCU8266.jpg, id=580, 803.0pt x 803.0pt>
+File: ./assets/NodeMCU8266.jpg Graphic file (type jpg)
+<use ./assets/NodeMCU8266.jpg>
+Package pdftex.def Info: ./assets/NodeMCU8266.jpg  used on input line 99.
+(pdftex.def)             Requested size: 321.1943pt x 321.1943pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 102.
+See the caption package documentation for explanation.
+
+[22]
+Overfull \hbox (3.7057pt too wide) in paragraph at lines 107--107
+[]|\OT1/ptm/m/n/12 Konektivitas| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\OT1/ptm/m/n/12 Masukan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
+[]|\OT1/ptm/m/n/12 Tegangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]|\OT1/ptm/m/n/12 Temperatur
+ []
+
+<./assets/NEO6M.jpg, id=586, 401.5pt x 401.5pt>
+File: ./assets/NEO6M.jpg Graphic file (type jpg)
+<use ./assets/NEO6M.jpg>
+Package pdftex.def Info: ./assets/NEO6M.jpg  used on input line 122.
+(pdftex.def)             Requested size: 160.59715pt x 160.59715pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 125.
+See the caption package documentation for explanation.
+
+[23 <./assets/NodeMCU8266.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 \OT1/ptm/m/it/12 (re-a-cqu-i-si-tion)\OT1/ptm/m/n/12 , -147dBm \OT1/ptm/m/it/12
  (co-ld start)\OT1/ptm/m/n/12 , -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 []|\OT1/ptm/m/n/12 Akurasi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
 \OT1/ptm/m/n/12 po-si-si
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []|\OT1/ptm/m/n/12 Masukan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []|\OT1/ptm/m/n/12 Maksimum
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []|\OT1/ptm/m/n/12 Temperatur
  []
 
-<./assets/MJX.jpg, id=454, 803.0pt x 803.0pt>
+<./assets/MJX.jpg, id=593, 803.0pt x 803.0pt>
 File: ./assets/MJX.jpg Graphic file (type jpg)
 <use ./assets/MJX.jpg>
-Package pdftex.def Info: ./assets/MJX.jpg  used on input line 87.
+Package pdftex.def Info: ./assets/MJX.jpg  used on input line 146.
 (pdftex.def)             Requested size: 160.59715pt x 160.59715pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 90.
+(caption)                particular \caption on input line 149.
 See the caption package documentation for explanation.
 
-[19 <./assets/NEO6M.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[24 <./assets/NEO6M.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 []|\OT1/ptm/m/n/12 Jarak Re-mo-te
  []
 
-<./assets/FlowchartSenderNew.png, id=463, 1147.28625pt x 655.44875pt>
+<./assets/FlowchartSenderNew.png, id=601, 1147.28625pt x 655.44875pt>
 File: ./assets/FlowchartSenderNew.png Graphic file (type png)
 <use ./assets/FlowchartSenderNew.png>
-Package pdftex.def Info: ./assets/FlowchartSenderNew.png  used on input line 11
-0.
+Package pdftex.def Info: ./assets/FlowchartSenderNew.png  used on input line 16
+9.
 (pdftex.def)             Requested size: 401.5562pt x 229.41049pt.
 
-Overfull \hbox (3.2176pt too wide) in paragraph at lines 110--111
+Overfull \hbox (3.2176pt too wide) in paragraph at lines 169--170
  [][] 
  []
 
-[20 <./assets/MJX.jpg>] [21 <./assets/FlowchartSenderNew.png>]
-<./assets/FlowchartReceiver.png, id=474, 404.712pt x 578.16pt>
+[25 <./assets/MJX.jpg>] [26 <./assets/FlowchartSenderNew.png>]
+<./assets/FlowchartReceiver.png, id=613, 404.712pt x 578.16pt>
 File: ./assets/FlowchartReceiver.png Graphic file (type png)
 <use ./assets/FlowchartReceiver.png>
-Package pdftex.def Info: ./assets/FlowchartReceiver.png  used on input line 128
+Package pdftex.def Info: ./assets/FlowchartReceiver.png  used on input line 187
 .
 (pdftex.def)             Requested size: 242.82907pt x 346.89867pt.
- [22]
-<./assets/FlowchartNetworkTest.png, id=482, 544.0325pt x 634.37pt>
-File: ./assets/FlowchartNetworkTest.png Graphic file (type png)
-<use ./assets/FlowchartNetworkTest.png>
-Package pdftex.def Info: ./assets/FlowchartNetworkTest.png  used on input line 
-137.
-(pdftex.def)             Requested size: 272.01558pt x 317.18422pt.
- [23 <./assets/FlowchartReceiver.png>]
-Overfull \hbox (34.38963pt too wide) in paragraph at lines 145--146
-\OT1/ptm/m/n/12 kuk-an se-ba-nyak 10 ka-li, la-lu mem-ban-dingk-an be-ra-pa ka-
-li fung-si [][]\OT1/pcr/m/n/12 startdelayMeas()
+ [27]
+<./assets/FlowchartNetworkTestNew.png, id=621, 691.58376pt x 574.145pt>
+File: ./assets/FlowchartNetworkTestNew.png Graphic file (type png)
+<use ./assets/FlowchartNetworkTestNew.png>
+Package pdftex.def Info: ./assets/FlowchartNetworkTestNew.png  used on input li
+ne 196.
+(pdftex.def)             Requested size: 345.79103pt x 287.0718pt.
+ [28 <./assets/FlowchartReceiver.png>] [29 <./assets/FlowchartNetworkTestNew.pn
+g>])
+[30]
+\openout2 = `./src/bab4.aux'.
+
+ (./src/bab4.tex
+Bab IV.
+<./assets/PetaNonTerbangN.png, id=639, 713.66624pt x 498.86375pt>
+File: ./assets/PetaNonTerbangN.png Graphic file (type png)
+<use ./assets/PetaNonTerbangN.png>
+Package pdftex.def Info: ./assets/PetaNonTerbangN.png  used on input line 10.
+(pdftex.def)             Requested size: 356.83224pt x 249.43126pt.
+<./assets/PetaTerbangSatuBTP.png, id=640, 806.01125pt x 512.91624pt>
+File: ./assets/PetaTerbangSatuBTP.png Graphic file (type png)
+<use ./assets/PetaTerbangSatuBTP.png>
+Package pdftex.def Info: ./assets/PetaTerbangSatuBTP.png  used on input line 17
+.
+(pdftex.def)             Requested size: 403.00464pt x 256.45749pt.
+
+Overfull \hbox (4.66605pt too wide) in paragraph at lines 17--18
+ [][] 
  []
 
-[24 <./assets/FlowchartNetworkTest.png>]) [25]
-Overfull \hbox (4.91504pt too wide) in paragraph at lines 75--75
+[31
+
+
+
+
+ <./assets/PetaNonTerbangN.png>]
+<./assets/PetaTerbangDuaBTP.png, id=648, 705.63625pt x 405.515pt>
+File: ./assets/PetaTerbangDuaBTP.png Graphic file (type png)
+<use ./assets/PetaTerbangDuaBTP.png>
+Package pdftex.def Info: ./assets/PetaTerbangDuaBTP.png  used on input line 24.
+
+(pdftex.def)             Requested size: 352.81726pt x 202.75699pt.
+ [32 <./assets/PetaTerbangSatuBTP.png>])
+[33 <./assets/PetaTerbangDuaBTP.png>]
+Overfull \hbox (4.91504pt too wide) in paragraph at lines 78--78
 []\OT1/ptm/m/n/12 C. Shi-man-ski, \OT1/ptm/m/it/12 Risks in Moun-tain Res-cue\O
 T1/ptm/m/n/12 . Moun-tain Res-cue As-so-ci-a-tion, 2008. 
  []
 
 
-Overfull \hbox (95.95395pt too wide) in paragraph at lines 75--75
+Overfull \hbox (95.95395pt too wide) in paragraph at lines 78--78
 []\OT1/ptm/m/it/12 Drones for Search and Res-cue | Learn How and Why They are U
 sed\OT1/ptm/m/n/12 , https://flytnow.com/drones-
  []
 
 
-Overfull \hbox (158.13545pt too wide) in paragraph at lines 75--75
+Overfull \hbox (158.13545pt too wide) in paragraph at lines 78--78
 []\OT1/ptm/m/it/12 Precision of co-or-di-nates - Open-StreetMap Wiki\OT1/ptm/m/
 n/12 , https://wiki.openstreetmap.org/wiki/Precision[]of[]coordinates. 
  []
 
-[26
+[34
 
 
 
 ]
-Overfull \hbox (37.34337pt too wide) in paragraph at lines 75--75
+Overfull \hbox (90.41301pt too wide) in paragraph at lines 78--78
+\OT1/ptm/m/n/12 able: []$\OT1/pcr/m/n/12 https : / / libgen . fun / book / inde
+x . php ? md5 = 101ea841867848bb45e62ad5e4ab4071$[]\OT1/ptm/m/n/12 . 
+ []
+
+
+Overfull \hbox (16.07364pt too wide) in paragraph at lines 78--78
+[]\OT1/ptm/m/n/12 B. A. Forouzan, \OT1/ptm/m/it/12 Data Com-mu-ni-ca-tions and 
+Net-work-ing \OT1/ptm/m/n/12 (McGraw-Hill Forouzan
+ []
+
+
+Overfull \hbox (94.21237pt too wide) in paragraph at lines 78--78
+\OT1/ptm/m/n/12 Net-work-ing), 4th ed. McGraw-Hill Higher Ed-u-ca-tion, 2007, \
+OT1/ptm/m/sc/12 isbn\OT1/ptm/m/n/12 : 9780072967753,0072967757.
+ []
+
+
+Overfull \hbox (14.97325pt too wide) in paragraph at lines 78--78
+\OT1/ptm/m/n/12 able: []$\OT1/pcr/m/n/12 https : / / learn . adafruit . com / a
+lltheiot -[] transports / bluetooth -[]
+ []
+
+
+Overfull \hbox (19.06613pt too wide) in paragraph at lines 78--78
+\OT1/ptm/m/n/12 [On-line]. Avail-able: []$\OT1/pcr/m/n/12 https : / / www . coa
+i . com / indian -[] telecom -[] infocentre /
+ []
+
+
+Overfull \hbox (37.34337pt too wide) in paragraph at lines 78--78
 \OT1/ptm/m/it/12 tion\OT1/ptm/m/n/12 , https://docs.espressif.com/projects/esp-
 idf/en/latest/esp32/api-guides/wifi.html. 
  []
 
 
-Overfull \hbox (71.51953pt too wide) in paragraph at lines 75--75
+Overfull \hbox (71.51953pt too wide) in paragraph at lines 78--78
 []\OT1/ptm/m/it/12 Home $\OMS/pzccm/m/n/12 ^^A$ \OT1/ptm/m/it/12 Wiki $\OMS/pzc
 cm/m/n/12 ^^A$ \OT1/ptm/m/it/12 painlessMesh / painlessMesh\OT1/ptm/m/n/12 , ht
 tps://gitlab.com/painlessMesh/painlessMesh/-
  []
 
 
-Overfull \hbox (111.26309pt too wide) in paragraph at lines 75--75
+Overfull \hbox (111.26309pt too wide) in paragraph at lines 78--78
 []\OT1/ptm/m/it/12 Mesh pro-to-col $\OMS/pzccm/m/n/12 ^^A$ \OT1/ptm/m/it/12 Wik
 i $\OMS/pzccm/m/n/12 ^^A$ \OT1/ptm/m/it/12 painlessMesh / painlessMesh\OT1/ptm/
 m/n/12 , https://gitlab.com/painlessMesh/painlessMesh/-
  []
 
-[27] (./main.aux (./src/cover.aux) (./src/pengesahan.aux)
+[35] (./main.aux (./src/cover.aux) (./src/pengesahan.aux)
 (./src/orisinalitas.aux) (./src/abstrak.aux) (./src/abstract.aux)
 (./src/katapengantar.aux) (./src/ucapanterimakasih.aux) (./src/daftarisi.aux)
 (./src/daftargambar.aux) (./src/daftartabel.aux) (./src/daftarsingkatan.aux)
-(./src/bab1.aux) (./src/bab2.aux) (./src/bab3.aux))
+(./src/bab1.aux) (./src/bab2new.aux) (./src/bab3.aux) (./src/bab4.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E4F024545516A885CF4D47F69EAFDBA8;5253.
+(rerunfilecheck)             Checksum: 9DD6AFCAD015665D2A0F496983AE06CD;8401.
 
 Package biblatex Warning: Please rerun LaTeX.
 
@@ -2038,10 +2157,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23142 strings out of 478238
- 408812 string characters out of 5850456
- 1158656 words of memory out of 5000000
- 40804 multiletter control sequences out of 15000+600000
+ 23321 strings out of 478238
+ 413527 string characters out of 5850456
+ 1162109 words of memory out of 5000000
+ 40925 multiletter control sequences out of 15000+600000
  502798 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,8n,71p,1808b,1744s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2051,10 +2170,10 @@ ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 fb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-di
 st/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (39 pages, 936228 bytes).
+Output written on main.pdf (47 pages, 3271729 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 152 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 771 PDF objects out of 1000 (max. 8388607)
+ 669 compressed objects within 7 object streams
+ 198 named destinations out of 1000 (max. 500000)
+ 533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

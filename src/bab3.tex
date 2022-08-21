@@ -1,7 +1,24 @@
 \chapter{PERANCANGAN SISTEM}
 
 \section{Desain Sistem}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{./assets/DiagramHWNewV2}
+	\caption{Diagram implementasi sistem.}
+\end{figure}
 Desain dan implementasi tugas akhir ini bertujuan untuk merancang sebuah sistem algoritma komunikasi antar-UAV menggunakan jaringan mesh berbasis ESP32. Perancangan sistem terdiri dari proses perancangan blok diagram sistem, penjelasan sistem secara umum, perancangan perangkat keras sistem, serta perancangan dan penjelasan perangkat lunak sistem yang meliputi algoritma komunikasi tersebut.
+
+\subsection{Prinsip Kerja Sistem}
+Berdasarkan rumusan masalah yang telah dipaparkan pada bab 1, berikut adalah konsep prinsip kerja sistem yang dikembangkan:
+\begin{enumerate}
+	\item Terdapat 2 drone dan 1 \textit{Base Station} (BS), masing-masing menggunakan mikrokontroler ESP32 yang berkomunikasi satu sama lain menggunakan JSON \textit{messages} pada jaringan PainlessMesh. Drone 1 disebut sebagai \textit{"sender node"}, dan drone 2 disebut sebagai \textit{"receiver node"}.
+	\item ESP32 Drone 1 mengaktifkan modul GPS dan mendata koordinat lokasi, ketinggian terbang drone, dan jumlah satelit yang mendapat \textit{lock}, kemudian menghidupkan LED hijau pada \textit{board}.
+	\item Drone 2 mengirimkan permintaan data lokasi kepada drone 1.
+	\item Drone 1 mengirimkan data melalui jaringan mesh kepada drone 2. Drone 2 menghidupkan LED hijau setelah menerima data lokasi yang valid.
+	\item BS mengirimkan permintaan data pada drone 1 berupa \textit{string} dalam \textit{message}.
+	\item Drone 1 mengirimkan data melalui jaringan mesh kepada BS.
+	\item BS menampilkan data kepada pengguna melalui \textit{WiFi Access Point} yang dapat diakses dari sebuah \textit{website}. WiFi AP tersebut dibangun menggunakan sebuah board ESP8266 yang menerima data dari board ESP32 yang terhubung dengan jaringan mesh melalui sambungan serial.
+\end{enumerate}
 
 \subsection{Diagram Blok}
 \begin{figure}[H]
@@ -28,14 +45,32 @@ Sistem yang dirancang untuk tugas akhir ini memiliki fungsi komunikasi data loka
 \section{Desain Perangkat Keras}
 Perangkat yang digunakan pada sistem ini adalah tiga buah board DOIT ESP32 Development Kit, sebuah board NodeMCU ESP8266, sebuah modul GPS NEO-6M, sebuah board modul MicroSD, baterai Lithium-Polymer (LiPo) 2S 1500 mAh, sebuah linear regulator LM7805, dan dua buah drone. Sistem dapat menerima daya dari baterai LiPo melalui konektor \textit{balance} JST XH, yang kemudian tegangannya diturunkan menggunakan linear regulator LM7805 ke tegangan 5V.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.35]{./assets/DiagramHWNew}
-	\caption{Diagram perangkat keras sistem.}
-\end{figure}
 Perancangan sistem membutuhkan komponen-komponen pendukung untuk dapat merealisasikan sistem, diantaranya adalah board DOIT-ESP32-DEVKIT, modul GPS NEO-6M, drone MJX Bugs 5W, dan \textit{power supply}, dengan spesifikasi sebagai berikut:
 \begin{enumerate}
-	\item DOIT-ESP32-DEVKIT\newline Board DOIT-ESP32-DEVKIT adalah sebuah \textit{development kit} yang menggunakan mikrokontroler ESP32, sehingga memiliki kapabilitas Wi-Fi dan Bluetooth. Pada perancangan sistem ini, ESP32 digunakan sebagai modul komunikasi pada drone dan \textit{base station}.
+	\item Ai-Thinker NodeMCU-32S\newline Board Ai-Thinker NodeMCU-32S adalah sebuah \textit{development kit} berbasis mikrokontroler ESP32S dari Ai-Thinker. Board ini memiliki kapabilitas Wi-Fi dan Bluetooth, serta mendukung penggunaan antena eksternal melalui konektor Hirose U.FL. Menggunakan kabel \textit{pigtail} konverter U.FL ke konektor SubMiniature A (SMA), maka board ini dapat dengan mudah dihubungkan dengan sebuah antena eksternal 2.4 GHz. Pada perancangan sistem ini, board ini digunakan sebagai modul komunikasi pada drone \textit{sender}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{./assets/NodeMCU32}
+		\caption{Board Ai-Thinker NodeMCU-32S}
+	\end{figure}
+	\captionof{table}{Spesifikasi Ai-Thinker NodeMCU-32S}
+	\begin{longtable}{|p{2cm}|p{8cm}|}
+		\hline
+		SOC&2x Xtensa 32-bit LX6 microprocessor up to 240MHz, 384KB ROM, 512KB SRAM\\
+		\hline
+		Konektivitas&WiFi 802.11 (B/G/N/LR), Bluetooth LE\\
+		\hline
+		IO&18 channel ADC, 10 capacitive sensing GPIO, 3 UART interfaces, 3 SPI interfaces, 2 I$^2$C interfaces, 16 PWM output channels, 2 channel DAC, 2 I$^2$S interfaces\\
+		\hline
+		Masukan tegangan&5V regulated, 6V - 20V unregulated\\
+		\hline
+		Tegangan operasional&3.3V\\
+		\hline
+		Temperatur operasi&-40\textdegree C - 85\textdegree C\\
+		\hline
+	\end{longtable}
+
+	\item DOIT-ESP32-DEVKIT\newline Board DOIT-ESP32-DEVKIT adalah sebuah \textit{development kit} yang menggunakan mikrokontroler ESP32, sehingga memiliki kapabilitas Wi-Fi dan Bluetooth. Pada perancangan sistem ini, ESP32 digunakan sebagai modul komunikasi pada drone \textit{flying receiver} dan \textit{base station}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{./assets/ESP32}
@@ -57,7 +92,31 @@ Perancangan sistem membutuhkan komponen-komponen pendukung untuk dapat merealisa
 		Temperatur operasi&-40\textdegree C - 85\textdegree C\\
 		\hline
 	\end{longtable}
-	\item NEO-6M\newline NEO-6M adalah modul GPS \textit{receiver} \textit{standalone} yang menggunakan u-blox 6 positioning engine. Pada perancangan sistem ini, NEO-6M digunakan sebagai modul GPS untuk mendapatkan data lokasi untuk dikirimkan.
+	
+	\item Ai-Thinker NodeMCU ESP-12S (ESP8266)\newline Board Ai-Thinker NodeMCU ESP-12S adalah sebuah \textit{development kit} yang menggunakan mikrokontroler ESP8266. Pada perancangan sistem ini, ESP8266 digunakan sebagai \textit{web server} yang menampilkan data lokasi drone sender yang diterima oleh \textit{base station} ESP32 melalui UART.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{./assets/NodeMCU8266}
+		\caption{Board Ai-Thinker NodeMCU ESP-12S}
+	\end{figure}
+	\captionof{table}{Spesifikasi Ai-Thinker NodeMCU ESP-12S}
+	\begin{longtable}{|p{2cm}|p{8cm}|}
+		\hline
+		SOC&Tensilica L106 32-bit 160 MHz\\
+		\hline
+		Konektivitas&WiFi 802.11 (B/G/N)\\
+		\hline
+		IO&9 IO Port, 1.5 UART Interfaces\\
+		\hline
+		Masukan tegangan&5V regulated, 6V - 20V unregulated\\
+		\hline
+		Tegangan operasional&3.3V\\
+		\hline
+		Temperatur operasi&-20\textdegree C - 85\textdegree C\\
+		\hline
+	\end{longtable}
+
+	\item NEO-6M\newline NEO-6M adalah modul GPS \textit{receiver} \textit{standalone} yang menggunakan U-Blox 6 Positioning Engine. Pada perancangan sistem ini, NEO-6M digunakan sebagai modul GPS untuk mendapatkan data lokasi untuk dikirimkan.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{./assets/NEO6M}
@@ -134,14 +193,14 @@ Pelaksanaan masing-masing task pada node ini terjadwal menggunakan fitur \textit
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{./assets/FlowchartNetworkTest}
+	\includegraphics[scale=0.5]{./assets/FlowchartNetworkTestNew}
 	\caption{Diagram alur node flying receiver, program pengujian jaringan.}
 \end{figure}
 
 Berdasarkan yang dipaparkan pada Bab 2, pengujian kinerja jaringan yang dilakukan adalah pengujian \textit{throughput}, \textit{round-trip delay}, dan \textit{packet loss}.
 \begin{enumerate}
 	\item \textit{Throughput}\newline Pengujian \textit{throughput} dilakukan bersamaan dengan program penarikan data lokasi, yakni dengan menghitung besar paket data lokasi yang dikirim, membandingkan waktu pengiriman dan waktu penerimaan paket data, lalu membagi besar paket data tersebut dengan selisih waktu pengiriman dan penerimaan paket data.
-	\item \textit{Round-trip delay}\newline Pengujian \textit{round-trip delay} menggunakan fungsi \verb|startdelayMeas()| pada library PainlessMesh yang menghasilkan \textit{return value} sebesar nilai \textit{delay} dalam mikrosekon.
-	\item \textit{Packet loss}\newline Pengujian \textit{packet loss} menumpang pada pengujian \textit{round-trip delay} yang dilakukan sebanyak 10 kali, lalu membandingkan berapa kali fungsi \verb|startdelayMeas()| dipanggil terhadap jumlah output yang didapatkan, yakni respon dari node sender.
+	\item \textit{Round-trip delay}\newline Pengujian \textit{round-trip delay} menggunakan fungsi \verb|startdelayMeas()| pada library PainlessMesh yang menghasilkan \textit{return value} sebesar nilai \textit{delay} dalam mikrosekon. \textit{Receiver node} melakukan tes ini tepat setelah menerima data lokasi dari \textit{sender node} dengan memanggil fungsi \verb|startDelayMeas()|. Setelah fungsi tersebut dipanggil, maka \textit{receiver} menambahkan jumlah \textit{counter} untuk paket data yang dikirim.
+	\item \textit{Packet loss}\newline Pengujian \textit{packet loss} dilakukan setelah 10 kali \textit{receiver} mengirim paket data lalu membandingkan berapa kali fungsi \verb|startdelayMeas()| dipanggil terhadap jumlah paket balasan dari \textit{sender} node.
 	\item \textit{Signal strength}\newline Pendataan \textit{signal strength} dilakukan setiap kali ada permintaan data dari receiver, menggunakan fungsi \verb|WiFi.RSSI()| dari ESP32.
 \end{enumerate}

@@ -531,9 +531,139 @@
       \verb /home/adeel/Zotero/storage/SM34ZIGZ/Guo et al. - 2021 - A dust sensor monitoring system using Wi-Fi mesh n.pdf
       \endverb
     \endentry
-    \entry{WiFiDriverESP32}{misc}{}
+    \entry{designing_a_wireless_network}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6a400fc6c6621c32ec8bbc893a3c9c87}{%
+           family={Wheat\bibnamedelima J.},
+           familyi={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Tucker\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           suffix={Hiser\bibnamedelima R.},
+           suffixi={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Syngress}%
+      }
+      \strng{namehash}{6a400fc6c6621c32ec8bbc893a3c9c87}
+      \strng{fullhash}{6a400fc6c6621c32ec8bbc893a3c9c87}
+      \strng{bibnamehash}{6a400fc6c6621c32ec8bbc893a3c9c87}
+      \strng{authorbibnamehash}{6a400fc6c6621c32ec8bbc893a3c9c87}
+      \strng{authornamehash}{6a400fc6c6621c32ec8bbc893a3c9c87}
+      \strng{authorfullhash}{6a400fc6c6621c32ec8bbc893a3c9c87}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st}
+      \field{isbn}{1928994148,192899427X,1928994458,192899458X}
+      \field{title}{Designing a Wireless Network}
+      \field{year}{2001}
+      \verb{urlraw}
+      \verb https://libgen.fun/book/index.php?md5=101ea841867848bb45e62ad5e4ab4071
+      \endverb
+      \verb{url}
+      \verb https://libgen.fun/book/index.php?md5=101ea841867848bb45e62ad5e4ab4071
+      \endverb
+    \endentry
+    \entry{data_communications_and_networking}{book}{}
+      \name{author}{1}{}{%
+        {{hash=15fe25340ae8cf0fe75afb7426a1df18}{%
+           family={Forouzan},
+           familyi={F\bibinitperiod},
+           given={Behrouz\bibnamedelima A.},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Higher Education}%
+      }
+      \strng{namehash}{15fe25340ae8cf0fe75afb7426a1df18}
+      \strng{fullhash}{15fe25340ae8cf0fe75afb7426a1df18}
+      \strng{bibnamehash}{15fe25340ae8cf0fe75afb7426a1df18}
+      \strng{authorbibnamehash}{15fe25340ae8cf0fe75afb7426a1df18}
+      \strng{authornamehash}{15fe25340ae8cf0fe75afb7426a1df18}
+      \strng{authorfullhash}{15fe25340ae8cf0fe75afb7426a1df18}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{9780072967753,0072967757}
+      \field{series}{McGraw-Hill Forouzan Networking}
+      \field{title}{Data Communications and Networking}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://libgen.fun/book/index.php?md5=f90841d02431af5010fb9cea31665e4e
+      \endverb
+      \verb{url}
+      \verb https://libgen.fun/book/index.php?md5=f90841d02431af5010fb9cea31665e4e
+      \endverb
+    \endentry
+    \entry{noauthor_all_nodate}{misc}{}
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{For the first part of Adafruit and Digikey’s All the Internet of Things - a six-part series, covering everything you need to know about the Internet of Things (which we will shorten to IoT) - we'll go over the most popular transports used in the IoT industry as well as their upsides and downsides.}
+      \field{journaltitle}{Adafruit Learning System}
+      \field{shorttitle}{All the {Internet} of {Things} - {Episode} {One}}
+      \field{title}{All the {Internet} of {Things} - {Episode} {One}: {Transports}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/adeel/Zotero/storage/2HFYIYKV/bluetooth-btle.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.adafruit.com/alltheiot-transports/bluetooth-btle
+      \endverb
+      \verb{url}
+      \verb https://learn.adafruit.com/alltheiot-transports/bluetooth-btle
+      \endverb
+    \endentry
+    \entry{noauthor_cellular_nodate}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Cellular {Network} {Architecture} {|} {Cellular} {Operators} {Association} of {India}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Cellular Network Architecture | Cellular Operators Association of India:/home/adeel/Zotero/storage/Y6IJWYDA/telecom-infrastructurenetworks.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.coai.com/indian-telecom-infocentre/telecom-infrastructurenetworks
+      \endverb
+      \verb{url}
+      \verb https://www.coai.com/indian-telecom-infocentre/telecom-infrastructurenetworks
+      \endverb
+    \endentry
+    \entry{noauthor_wi-fi_nodate}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Wi-{Fi} {Driver} - {ESP32} - — {ESP}-{IDF} {Programming} {Guide} latest documentation}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Wi-Fi Driver - ESP32 - — ESP-IDF Programming Guide latest documentation:/home/adeel/Zotero/storage/UHSEEGTZ/wifi.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/wifi.html
+      \endverb
+      \verb{url}
+      \verb https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/wifi.html
+      \endverb
+    \endentry
+    \entry{WiFiDriverESP32}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/wifi.html}
       \field{title}{Wi-{{Fi Driver}} - {{ESP32}} - —{} {{ESP-IDF Programming Guide}} Latest Documentation}
@@ -542,8 +672,8 @@
       \endverb
     \endentry
     \entry{HomeWikiPainlessMesh}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{abstract}{A painless way to setup a mesh with ESP8266 and ESP32 devices. Based on https://github.com/Coopdis/easyMesh}
       \field{howpublished}{https://gitlab.com/painlessMesh/painlessMesh/-/wikis/home}
@@ -555,8 +685,8 @@
       \endverb
     \endentry
     \entry{MeshProtocolWiki}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{abstract}{A painless way to setup a mesh with ESP8266 and ESP32 devices. Based on https://github.com/Coopdis/easyMesh}
       \field{howpublished}{https://gitlab.com/painlessMesh/painlessMesh/-/wikis/mesh-protocol}
@@ -565,6 +695,25 @@
       \field{title}{Mesh Protocol {$\cdot$} {{Wiki}} {$\cdot$} {{painlessMesh}} / {{painlessMesh}}}
       \verb{file}
       \verb /home/adeel/Zotero/storage/GAQK773U/mesh-protocol.html
+      \endverb
+    \endentry
+    \entry{noauthor_gpsgov_nodate}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{{GPS}.gov: {GPS} {Accuracy}}
+      \field{urlday}{16}
+      \field{urlmonth}{8}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb GPS.gov\: GPS Accuracy:/home/adeel/Zotero/storage/DLLAE53Z/accuracy.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.gps.gov/systems/gps/performance/accuracy/
+      \endverb
+      \verb{url}
+      \verb https://www.gps.gov/systems/gps/performance/accuracy/
       \endverb
     \endentry
     \entry{GPSNMEASentence}{misc}{}

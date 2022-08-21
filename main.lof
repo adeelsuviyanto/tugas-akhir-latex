@@ -2,19 +2,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Desain konsep sistem\relax }}{7}{figure.caption.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagram sistem\relax }}{8}{figure.caption.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces ESP32\relax }}{11}{figure.caption.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Topologi jaringan PainlessMesh \blx@tocontentsinit {0}\cite {HomeWikiPainlessMesh}, panah menunjukkan arah koneksi dari klien ke AP\relax }}{12}{figure.caption.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Setiap pesan pada jaringan PainlessMesh menggunakan JSON.\relax }}{12}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Contoh data mentah dari modul GPS NEO-6M berupa data GPS NMEA.\relax }}{13}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Skema pengujian \textit {round-trip delay} dan \textit {packet loss}\relax }}{14}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Bentuk topologi jaringan \textit {mesh} penuh dan parsial\relax }}{12}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces ESP32\relax }}{12}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Topologi jaringan PainlessMesh \blx@tocontentsinit {0}\cite {HomeWikiPainlessMesh}, panah menunjukkan arah koneksi dari klien ke AP\relax }}{13}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Setiap pesan pada jaringan PainlessMesh menggunakan JSON.\relax }}{14}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contoh data mentah dari modul GPS NEO-6M berupa data GPS NMEA.\relax }}{15}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Skema pengujian \textit {round-trip delay} dan \textit {packet loss}\relax }}{16}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram blok sistem.\relax }}{15}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagram perangkat keras sistem.\relax }}{17}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Board DOIT-ESP32-DEVKIT\relax }}{18}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Modul GPS NEO-6M\relax }}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Drone MJX Bugs 5W\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Diagram alur sender node.\relax }}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagram alur node flying receiver, program penarikan data lokasi dari node sender.\relax }}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagram alur node flying receiver, program pengujian jaringan.\relax }}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram implementasi sistem.\relax }}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagram blok sistem.\relax }}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Board Ai-Thinker NodeMCU-32S\relax }}{20}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Board DOIT-ESP32-DEVKIT\relax }}{21}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Board Ai-Thinker NodeMCU ESP-12S\relax }}{23}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Modul GPS NEO-6M\relax }}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Drone MJX Bugs 5W\relax }}{25}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagram alur sender node.\relax }}{26}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Diagram alur node flying receiver, program penarikan data lokasi dari node sender.\relax }}{28}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagram alur node flying receiver, program pengujian jaringan.\relax }}{29}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Penempatan node jaringan pada pengujian non-terbang di Gedung N FTE Telkom University.\relax }}{31}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Penempatan node jaringan pada pengujian terbang satu drone di Lapangan BTP Telkom University.\relax }}{32}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Penempatan node jaringan pada pengujian terbang dua drone di Lapangan BTP Telkom University.\relax }}{33}{figure.caption.20}%
 \babel@toc {english}{}\relax 

@@ -16,9 +16,6 @@
 % Load file konfigurasi
 \input{./src/config}
 
-% Load file BibLaTeX
-\addbibresource{./src/references.bib,./src/ta.bib,./assets/zoteroexport.bib }
-
 % Start dari dokumen
 \begin{document}
 	
@@ -53,6 +50,7 @@
 \renewcommand{\thesubsubsection}{\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 % Daftar isi
 \include{./src/daftarisi}
 % Daftar gambar
@@ -67,9 +65,14 @@
 % Bab 1
 \include{./src/bab1}
 % Bab 2
-\include{./src/bab2}
+%\include{./src/bab2}
+\include{./src/bab2new}
 % Bab 3
 \include{./src/bab3}
+% Bab 4
+\include{./src/bab4}
+% Bab 5
+%\include{./src/bab5}
 % Daftar Pustaka
 \selectlanguage{english}
 \printbibliography[title={DAFTAR PUSTAKA}]
