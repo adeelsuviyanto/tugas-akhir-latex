@@ -531,6 +531,62 @@
       \verb /home/adeel/Zotero/storage/SM34ZIGZ/Guo et al. - 2021 - A dust sensor monitoring system using Wi-Fi mesh n.pdf
       \endverb
     \endentry
+    \entry{chamola_comprehensive_2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=b739bdf70b8d0a68cb988c0f29cc3b7e}{%
+           family={Chamola},
+           familyi={C\bibinitperiod},
+           given={Vinay},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a168e5a8c08bf15f1cb82f1a7c0ee2c4}{%
+           family={Kotesh},
+           familyi={K\bibinitperiod},
+           given={Pavan},
+           giveni={P\bibinitperiod}}}%
+        {{hash=478c61b81568b4833618c0fa39a5ea9d}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Aayush},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4c93ae24020597e0a2f92f130bcbc32c}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Navneet},
+           giveni={N\bibinitperiod}}}%
+        {{hash=05189762dbb0ad87814451304904fe83}{%
+           family={Guizani},
+           familyi={G\bibinitperiod},
+           given={Mohsen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e8bc72eb04cf927219e0deec1dee7386}{%
+           family={Naren},
+           familyi={N\bibinitperiod},
+           given={Naren},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a631fa4b1380b78dbf19ee91f0eb262}
+      \strng{fullhash}{433a356bbc5346a996832708c0ce7b16}
+      \strng{bibnamehash}{433a356bbc5346a996832708c0ce7b16}
+      \strng{authorbibnamehash}{433a356bbc5346a996832708c0ce7b16}
+      \strng{authornamehash}{1a631fa4b1380b78dbf19ee91f0eb262}
+      \strng{authorfullhash}{433a356bbc5346a996832708c0ce7b16}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Unmanned Aerial Vehicles (UAV) have revolutionized the aircraft industry in this decade. UAVs are now capable of carrying out remote sensing, remote monitoring, courier delivery, and a lot more. A lot of research is happening on making UAVs more robust using energy harvesting techniques to have a better battery lifetime, network performance and to secure against attackers. UAV networks are many times used for unmanned missions. There have been many attacks on civilian, military, and industrial targets that were carried out using remotely controlled or automated UAVs. This continued misuse has led to research in preventing unauthorized UAVs from causing damage to life and property. In this paper, we present a literature review of UAVs, UAV attacks, and their prevention using anti-UAV techniques. We first discuss the different types of UAVs, the regulatory laws for UAV activities, their use cases, recreational, and military UAV incidents. After understanding their operation, various techniques for monitoring and preventing UAV attacks are described along with case studies.}
+      \field{journaltitle}{Ad Hoc Networks}
+      \field{month}{10}
+      \field{title}{A {Comprehensive} {Review} of {Unmanned} {Aerial} {Vehicle} {Attacks} and {Neutralization} {Techniques}}
+      \field{volume}{111}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1016/j.adhoc.2020.102324
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/adeel/Zotero/storage/VZXSYUZJ/Chamola et al. - 2020 - A Comprehensive Review of Unmanned Aerial Vehicle .pdf:application/pdf
+      \endverb
+    \endentry
     \entry{designing_a_wireless_network}{book}{}
       \name{author}{1}{}{%
         {{hash=6a400fc6c6621c32ec8bbc893a3c9c87}{%
@@ -602,8 +658,8 @@
       \list{language}{1}{%
         {en-US}%
       }
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{For the first part of Adafruit and Digikey’s All the Internet of Things - a six-part series, covering everything you need to know about the Internet of Things (which we will shorten to IoT) - we'll go over the most popular transports used in the IoT industry as well as their upsides and downsides.}
       \field{journaltitle}{Adafruit Learning System}
@@ -624,8 +680,8 @@
       \endverb
     \endentry
     \entry{noauthor_cellular_nodate}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{Cellular {Network} {Architecture} {|} {Cellular} {Operators} {Association} of {India}}
       \field{urlday}{16}

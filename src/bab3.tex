@@ -200,7 +200,36 @@ Pelaksanaan masing-masing task pada node ini terjadwal menggunakan fitur \textit
 Berdasarkan yang dipaparkan pada Bab 2, pengujian kinerja jaringan yang dilakukan adalah pengujian \textit{throughput}, \textit{round-trip delay}, dan \textit{packet loss}.
 \begin{enumerate}
 	\item \textit{Throughput}\newline Pengujian \textit{throughput} dilakukan bersamaan dengan program penarikan data lokasi, yakni dengan menghitung besar paket data lokasi yang dikirim, membandingkan waktu pengiriman dan waktu penerimaan paket data, lalu membagi besar paket data tersebut dengan selisih waktu pengiriman dan penerimaan paket data.
+	\newline Misalkan dengan paket data sebesar 12 byte, waktu pengiriman paket data dari \textit{sender} senilai 1000 ms, dan waktu penerimaan paket data di \textit{receiver} senilai 1250 ms, maka nilai \textit{throughput} sebesar:
+	\begin{equation}
+		\begin{aligned}
+		Throughput &= \frac{sizeof(packet)}{t_1 - t_0}\\
+		&= \frac{12}{1250 - 1000}\\
+		&= \frac{12}{250} \\
+		& = 0.048 B/ms \\
+		& = 48 B/s
+		\end{aligned}
+	\end{equation}
 	\item \textit{Round-trip delay}\newline Pengujian \textit{round-trip delay} menggunakan fungsi \verb|startdelayMeas()| pada library PainlessMesh yang menghasilkan \textit{return value} sebesar nilai \textit{delay} dalam mikrosekon. \textit{Receiver node} melakukan tes ini tepat setelah menerima data lokasi dari \textit{sender node} dengan memanggil fungsi \verb|startDelayMeas()|. Setelah fungsi tersebut dipanggil, maka \textit{receiver} menambahkan jumlah \textit{counter} untuk paket data yang dikirim.
+	\newline Pada sistem ini, $t_0$ adalah \textit{timestamp internal clock} board ESP32 saat permintaan pengukuran \textit{delay} dibuat oleh \textit{receiver} node, $t_1$ adalah \textit{timestamp} jaringan saat permintaan pengukuran \textit{delay} diterima oleh \textit{sender} node, $t_2$ adalah \textit{timestamp} jaringan saat balasan dari \textit{sender} node dibuat, dan $t_3$ adalah \textit{timestamp internal clock} board ESP32 saat balasan pengukuran \textit{delay} diterima oleh \textit{receiver} node. Misalkan nilai $t_0$ = 20000 $\mu$s, $t_1$ = 25000 $\mu$s, $t_2$ = 35000 $\mu$s, dan $t_3$ = 60000 $\mu$s:
+	\begin{equation}
+		\begin{aligned}
+			t_{roundtrip} &= (t_3 - t_0) - (t_2 - t_1)\\
+			&= (60000 - 20000) - (35000 - 25000)\\
+			&= 40000 - 10000\\
+			&= 30000 \mu S\\
+			&= 30 ms
+		\end{aligned}
+	\end{equation}
 	\item \textit{Packet loss}\newline Pengujian \textit{packet loss} dilakukan setelah 10 kali \textit{receiver} mengirim paket data lalu membandingkan berapa kali fungsi \verb|startdelayMeas()| dipanggil terhadap jumlah paket balasan dari \textit{sender} node.
+	\newline Misalkan telah dikirimkan 80 paket pengukuran \textit{delay} dan telah diterima 75 paket respon pengukuran \textit{delay}, maka:
+	\begin{equation}
+		\begin{aligned}
+			Packet Loss &= (1-\frac{ack_{RX}}{p_{TX}})\times 100\% \\
+			&= (1 - \frac{75}{80}) \times 100 \% \\
+			&= 0.0625 \times 100 \% \\
+			&= 6.25 \%
+		\end{aligned}
+	\end{equation}
 	\item \textit{Signal strength}\newline Pendataan \textit{signal strength} dilakukan setiap kali ada permintaan data dari receiver, menggunakan fungsi \verb|WiFi.RSSI()| dari ESP32.
 \end{enumerate}

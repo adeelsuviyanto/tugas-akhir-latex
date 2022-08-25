@@ -15,7 +15,7 @@ Terdapat beberapa penelitian yang telah dilaksanakan sebelumnya yang terkait den
 	\captionof{table}{Penelitian terkait}
 	\begin{longtable}{|p{0.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 		\hline
-		&\textbf{Judul}&\textbf{Metode}&\textbf{Kesimpulan}&\textbf{Kelebihan}&\textbf{Kekurangan}\\
+		No.&\textbf{Judul}&\textbf{Metode}&\textbf{Kesimpulan}&\textbf{Kelebihan}&\textbf{Kekurangan}\\
 		\hline
 		\cite{santosUseHighMobility2021}&Use of High Mobility Nodes to Improve Connectivity in Wireless Sensor Networks&PainlessMesh-based Opportunistic Mobile Ad Hoc Networks&Menggunakan high mobility nodes berupa drone sebagai messenger data antara cluster sensor dengan server&Penelitian mengimplementasikan metode security berbasis secret-key cryptography. Packet loss antara sensor dan server rendah, hanya 4,48\% pada kondisi terburuk walaupun packet melewati 2 hop.
 		&Tidak menguji round-trip delay packet\\
@@ -31,10 +31,20 @@ Terdapat beberapa penelitian yang telah dilaksanakan sebelumnya yang terkait den
 
 Berdasarkan penelitian yang telah dilakukan sebelumnya, maka pada penelitian tugas akhir ini menggunakan 3 node jaringan, masing-masing berupa board mikrokontroler ESP32. 2 node ditempatkan pada UAV/drone quadcopter, dimana 1 node memiliki modul GPS sebagai pengirim data lokasi dan 1 node memiliki board MicroSD untuk \textit{data logging} serta sebagai penerima data lokasi dari pengirim. Node terakhir berada di darat dan berfungsi sebagai penerima data lokasi dari node pengirim serta menampilkan data tersebut kepada pengguna pada sebuah \textit{Web server}.
 
-\section{\textit{Unmanned Aerial Vehicles}}
+\section{\textit{Unmanned Aerial Vehicles} (UAV)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./assets/TypesOfUAVs}
+	\caption{Beberapa tipe-tipe UAV \cite{chamola_comprehensive_2020}}
+\end{figure}
 UAV adalah sebuah pesawat terbang yang dapat mengudara tanpa awak \cite{lakshminarayananJointNetworkDisaster2015}, dikendalikan secara \textit{remote} atau secara otonom. Salah satu tipe UAV adalah \textit{quadcopter drone}. Pada sistem ini, UAV digunakan sebagai pengirim data lokasi GPS sebagai node \textit{sender}, dan penerima data lokasi GPS sebagai node \textit{receiver}.
 
 \section{\textit{Quadcopter}}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{./assets/MJX}
+	\caption{Salah satu contoh \textit{quadcopter.}}
+\end{figure}
 Drone \textit{quadcopter} adalah suatu jenis UAV yang memiliki 4 rotor pada masing-masing sudut. Sama seperti helikopter, \textit{quadcopter} memiliki kemampuan untuk \textit{hover}. Terdapat sepasang rotor yang berputar searah jarum jam dan sepasang rotor yang berputar berlawanan arah jarum jam, sehingga pada kondisi \textit{steady state} total torsi pada \textit{drone} adalah nol. Hal tersebut juga menyebabkan konfigurasi \textit{quadcopter} tidak membutuhkan \textit{tail rotor}. Keempat rotor tersebut juga menghasilkan daya angkat yang besar, sehingga cocok digunakan untuk membawa \textit{payload}. Pada penelitian ini, setiap drone membawa payload berupa board mikrokontroler yang membuat sebuah jaringan nirkabel bersifat ad-hoc.
 
 \section{Jaringan Nirkabel}
@@ -150,11 +160,11 @@ $t_1$ = \textit{timestamp} pada saat penerima menerima paket data
 \subsection{Packet loss}
 Packet loss adalah jumlah packet data yang hilang dibandingkan packet data yang berhasil dikirimkan.
 \begin{equation}
-	Packet Loss = (1 - \frac{p_{TX}}{ack_{RX}})\times 100\%
+	Packet Loss = (1 - \frac{ack_{RX}}{p_{TX}})\times 100\%
 \end{equation}
 
 $p_{TX}$ = jumlah packet data yang dikirimkan\\
-$ack_{RX}$ = jumlah packet \textit{acknowledge} yang diterima
+$ack_{RX}$ = jumlah packet respon yang diterima
 
 \begin{figure}[H]
 	\centering
