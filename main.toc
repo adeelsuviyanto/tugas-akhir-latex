@@ -5,9 +5,9 @@
 \contentsline {chapter}{KATA PENGANTAR}{v}{Doc-Start}%
 \contentsline {chapter}{UCAPAN TERIMA KASIH}{vi}{Doc-Start}%
 \contentsline {chapter}{DAFTAR ISI}{vii}{Doc-Start}%
-\contentsline {chapter}{DAFTAR GAMBAR}{ix}{Doc-Start}%
-\contentsline {chapter}{DAFTAR TABEL}{x}{Doc-Start}%
-\contentsline {chapter}{DAFTAR SINGKATAN}{xi}{Doc-Start}%
+\contentsline {chapter}{DAFTAR GAMBAR}{x}{Doc-Start}%
+\contentsline {chapter}{DAFTAR TABEL}{xiii}{Doc-Start}%
+\contentsline {chapter}{DAFTAR SINGKATAN}{xiv}{Doc-Start}%
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Latar Belakang Masalah}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}%
@@ -56,18 +56,25 @@
 \contentsline {section}{\numberline {4.1}Pendahuluan}{32}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Pelaksanaan Pengujian Sistem}{32}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Kondisi Lingkungan Pengujian}{34}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Desain Alat}{35}{subsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.3.1}Drone \textit {Sender}}{35}{subsubsection.4.1.3.1}%
-\contentsline {subsubsection}{\numberline {4.1.3.2}Drone \textit {Receiver}}{35}{subsubsection.4.1.3.2}%
-\contentsline {subsubsection}{\numberline {4.1.3.3}\textit {Base Station Receiver}}{35}{subsubsection.4.1.3.3}%
-\contentsline {section}{\numberline {4.2}Skenario Pengujian}{36}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Pengujian Tanpa Terbang}{36}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Hasil Pengujian Skenario Komunikasi Dua Drone}{36}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Wi-Fi \textit {Long Range}}{36}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Wi-Fi 802.11n}{36}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Hasil dan Analisis Hasil Pengujian}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Pengujian Tanpa Terbang}{36}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Pengujian Terbang Satu Drone}{36}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Pengujian Terbang Dua Drone}{36}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Analisis Hasil Pengujian Keseluruhan}{36}{section.4.5}%
+\contentsline {subsection}{\numberline {4.1.3}Desain Alat}{36}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}Drone \textit {Sender}}{36}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}Drone \textit {Receiver}}{37}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}\textit {Base Station Receiver}}{38}{subsubsection.4.1.3.3}%
+\contentsline {section}{\numberline {4.2}Skenario Pengujian}{39}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pengujian Tanpa Terbang}{39}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Pengujian Terbang Satu Drone}{42}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Pengujian Terbang Dua Drone}{44}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Realisasi Algoritma Sistem}{45}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Hasil dan Analisis Pengujian Skenario Komunikasi Dua Drone}{47}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Hasil Pengujian}{50}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Pengujian Tanpa Terbang}{50}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}Wi-Fi Mode LR}{50}{subsubsection.4.5.1.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.2}Wi-Fi Mode 802.11n}{54}{subsubsection.4.5.1.2}%
+\contentsline {subsection}{\numberline {4.5.2}Pengujian Terbang Satu Drone}{58}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Wi-Fi Mode LR}{58}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}Wi-Fi Mode 802.11n}{61}{subsubsection.4.5.2.2}%
+\contentsline {section}{\numberline {4.6}Analisis Hasil Pengujian Keseluruhan}{62}{section.4.6}%
+\contentsline {chapter}{\numberline {V}KESIMPULAN DAN SARAN}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kesimpulan}{65}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Saran}{65}{section.5.2}%
 \babel@toc {english}{}\relax 

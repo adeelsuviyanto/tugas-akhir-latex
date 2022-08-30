@@ -1,0 +1,27 @@
+\chapter{KESIMPULAN DAN SARAN}
+\section{Kesimpulan}
+Dari penelitian yang telah dilakukan, dapat disimpulkan bahwa:
+\begin{enumerate}
+	\item Board-board ESP32 dapat membuat sebuah jaringan mesh yang mampu mengirimkan pesan berupa JSON \textit{string} menggunakan \textit{library} PainlessMesh.
+	
+	\item Wi-Fi mode \textit{Long Range} (LR) ESP32 memiliki keunggulan dimana masing-masing node dapat berkomunikasi pada kekuatan sinyal yang lebih buruk dibandingkan Wi-Fi mode 802.11n.
+	
+	\item Wi-Fi mode 802.11n dapat menghasilkan nilai \textit{throughput} yang lebih tinggi dibandikan pada Wi-Fi mode LR.
+	
+	\item Jaringan yang dihasilkan tidak memenuhi kriteria \textit{packet loss}, dengan hasil pengujian terbang 2 drone menghasilkan nilai \textit{packet loss} maksimum sebesar 89,552 \%.
+	
+	\item Jaringan yang dihasilkan memenuhi kriteria \textit{round-trip delay} dan jarak, dengan jaringan masih bisa berkomunikasi dengan jarak antar-node hingga 48 meter pada pengujian tanpa terbang, dan 30 meter pada pengujian terbang. Pada masing-masing pengujian, nilai median \textit{round-trip delay} maksimum adalah 190,5 ms, dibawah nilai kriteria minimum.
+	
+	\item Wi-Fi mode 802.11n tidak cocok digunakan untuk komunikasi antar-UAV, berdasarkan hasil pengujian terbang 1 drone dengan mode 802.11n dimana kedua node tidak pernah berhasil untuk terkoneksi satu sama lain dan membangun jaringan.
+	
+	\item Dengan \textit{throughput} median pada mode LR terbesar senilai 524,934 bps, jaringan yang dihasilkan cukup cepat untuk mengirimkan data lokasi berbasis JSON sebesar 12 byte.
+\end{enumerate}
+
+\section{Saran}
+Untuk perbaikan hasil penelitian agar lebih baik untuk di masa depan, penulis memiliki beberapa saran untuk meningkatkan kinerja sistem yang dihasilkan, yakni:
+\begin{enumerate}
+	\item Dilakukan penelitian pemilihan dan penempatan antena untuk dapat menjaga \textit{line-of-sight} antar node jaringan.
+	\item Gunakan drone \textit{custom} agar implementasi sistem lebih fleksibel dari sisi penempatan antena, catu daya, dan waktu terbang. Penggunaan drone \textit{custom} juga dapat membantu memajukan penelitian ini ke tahap kontrol otonom.
+	\item Menggunakan mikrokomputer seperti Raspberry Pi untuk menguji skema-skema \textit{routing} FANET yang lebih kompleks.
+	\item Perbaikan algoritma perhitungan \textit{throughput} untuk mencegah masalah \textit{overflow} pada \textit{timestamp} data.
+\end{enumerate}

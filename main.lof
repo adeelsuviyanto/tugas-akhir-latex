@@ -26,5 +26,53 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Penempatan node jaringan pada pengujian terbang satu drone di Lapangan BTP Telkom University.\relax }}{33}{figure.caption.21}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Penempatan node jaringan pada pengujian terbang dua drone di Lapangan BTP Telkom University.\relax }}{34}{figure.caption.22}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Hasil analisis spektrum Wi-Fi 2.4 GHz di Lapangan BTP Telkom University.\relax }}{34}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Penampakan implementasi \textit {sender} node di drone MJX Bugs 5W.\relax }}{35}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Hasil analisis spektrum Wi-Fi 2.4 GHz di Gedung N Telkom University.\relax }}{35}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Penampakan implementasi \textit {sender} node di drone MJX Bugs 5W.\relax }}{36}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Penampakan implementasi \textit {sender} node di drone MJX Bugs 5W.\relax }}{37}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Implementasi \textit {Base Station Receiver} menggunakan \textit {development board} Ai-Thinker NodeMCU ESP8266 dan DOIT-ESP32-DEVKIT\relax }}{38}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Penempatan \textit {sender} node pada pengujian tanpa terbang, di depan ruangan N304.\relax }}{39}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Penempatan \textit {base station} pada pengujian tanpa terbang, di depan ruangan N308.\relax }}{39}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Penempatan \textit {flying receiver} node pada pengujian tanpa terbang, di depan ruangan N314.\relax }}{39}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Lingkaran merah menunjukkan posisi \textit {flying receiver} node dari \textit {sender}, dengan \textit {line-of-sight} yang jelas.\relax }}{41}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Lingkaran merah menunjukkan posisi \textit {sender} node dari \textit {flying receiver}, dengan \textit {line-of-sight} yang jelas.\relax }}{41}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Lingkaran merah menunjukkan posisi \textit {base station} dari \textit {flying receiver}, terlihat bahwa \textit {line-of-sight} tertutup oleh pohon.\relax }}{41}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Pengujian satu drone, jarak 30 meter dan ketinggian dari 4 meter ke 10 meter.\relax }}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Jarak drone dengan penguji sekitar 32 meter.\relax }}{43}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Penempatan node \textit {flying receiver} di topi penguji. Foto diambil sebelum node \textit {flying receiver} dinyalakan.\relax }}{43}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Pengujian dua drone, jarak antar-drone 30 meter dan ketinggian dari 4 meter ke 10 meter.\relax }}{44}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Proses koneksi awal di node \textit {receiver}.\relax }}{45}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Proses koneksi awal di node \textit {sender}.\relax }}{45}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Permintaan status GPS kepada \textit {sender} oleh \textit {receiver}.\relax }}{45}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Balasan status GPS kepada \textit {receiver}.\relax }}{45}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Permintaan data lokasi kepada \textit {sender} oleh \textit {receiver}.\relax }}{46}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Balasan data lokasi kepada \textit {receiver}.\relax }}{46}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Data lokasi yang dikirimkan oleh \textit {sender}.\relax }}{46}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Tampilan awal laman web \textit {base station}.\relax }}{46}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Tampilan laman web \textit {base station} setelah melakukan koneksi ke \textit {sender} beserta meminta status GPS.\relax }}{47}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Grafik \textit {throughput} dan RSSI terhadap waktu, mode LR\relax }}{47}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Grafik \textit {throughput} terhadap RSSI, mode LR\relax }}{48}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Grafik \textit {round-trip delay} dan RSSI terhadap waktu, mode LR\relax }}{49}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Grafik \textit {packet loss} dan RSSI terhadap waktu, mode LR\relax }}{49}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Grafik \textit {throughput} dan RSSI terhadap waktu, mode LR\relax }}{50}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Grafik \textit {throughput} dan jumlah node terhadap waktu, mode LR\relax }}{51}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Grafik \textit {throughput} terhadap \textit {Receiver RSSI}, mode LR\relax }}{51}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Grafik \textit {round-trip delay} dan \textit {Receiver RSSI} terhadap waktu, mode LR\relax }}{52}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Grafik \textit {round-trip delay} dan jumlah node terhadap waktu, mode LR\relax }}{53}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Grafik \textit {round-trip delay} terhadap \textit {Receiver RSSI}, mode LR\relax }}{53}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Grafik \textit {packet loss} terhadap waktu, mode LR\relax }}{54}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Grafik \textit {throughput} dan RSSI terhadap waktu, mode 802.11n\relax }}{54}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Grafik \textit {throughput} terhadap RSSI, mode 802.11n\relax }}{55}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Grafik \textit {round-trip delay} dan \textit {Receiver RSSI} terhadap waktu, mode 802.11n\relax }}{56}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Grafik \textit {round-trip delay} terhadap RSSI, mode 802.11n\relax }}{56}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.43}{\ignorespaces Grafik \textit {packet loss} terhadap waktu, mode LR\relax }}{57}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.44}{\ignorespaces Grafik \textit {throughput} dan RSSI terhadap waktu, mode LR\relax }}{58}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.45}{\ignorespaces Grafik \textit {throughput} terhadap \textit {Receiver RSSI}, mode LR\relax }}{59}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Grafik \textit {round-trip delay} dan RSSI terhadap waktu, mode LR\relax }}{59}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.47}{\ignorespaces Grafik \textit {round-trip delay} terhadap \textit {Receiver RSSI}, mode LR\relax }}{60}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.48}{\ignorespaces Grafik \textit {packet loss} terhadap waktu, mode LR\relax }}{60}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.49}{\ignorespaces Grafik \textit {throughput} dan RSSI terhadap waktu, mode 802.11n\relax }}{61}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Grafik \textit {round-trip delay} dan RSSI terhadap waktu, mode 802.11n\relax }}{62}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.51}{\ignorespaces Grafik \textit {throughput} setiap pengujian terhadap RSSI, mode LR.\relax }}{62}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.52}{\ignorespaces Grafik \textit {round-trip delay} setiap pengujian terhadap RSSI, mode LR.\relax }}{63}{figure.caption.66}%
+\addvspace {10\p@ }
 \babel@toc {english}{}\relax 
